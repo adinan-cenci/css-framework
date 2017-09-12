@@ -1,0 +1,19 @@
+/*************************************
+#*** INPUT FILE
+#************************************/
+
+.firefox-browser {
+
+    /*as expected, it works wonderfuly in chrome, but not so much in firefox*/    
+    input[type=file] {
+        height: auto;
+        padding: 4px;
+    }
+
+    /*the dots are large and together */
+    input[type=password] {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+}
+

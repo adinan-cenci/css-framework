@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="firefox-fix.css">
+        
+        <script src="jquery.js"></script>
+        <script src="modernizr-custom.js"></script>
+        <script>
+            Modernizr.addTest('firefox-browser', function () {
+                return !!navigator.userAgent.match(/Firefox/i);
+            });
+        </script>
+
+        <style>
+            #middle {
+                width: 960px;
+                padding-top: 40px;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div id="middle">
+
+            <form action="">
+                <label>Input text</label>
+                <input type="text" placeholder="Esse e um text" />
+
+                <label>Disabled</label>
+                <input type="text" disabled="disabled" value="desabilitado" />
+
+                <label>read only</label>
+                <input type="text" readonly="readonly" value="read only" />
+
+                <label>Input password</label>
+                <input type="password" value="123" />
+
+                <label>Url</label>
+                <input type="url">
+
+                <Label>Email:</Label>
+                <input type="email">
+
+                <Label>Tel:</Label>
+                <input type="tel">
+
+                <Label>Color:</Label>
+                <input type="color">
+
+                <Label>Date:</Label>
+                <input type="date">
+
+                <Label>datetime-local:</Label>
+                <input type="datetime-local">
+
+                <Label>Month:</Label>
+                <input type="month">
+
+                <Label>Week:</Label>
+                <input type="week">
+
+                <Label>Time:</Label>
+                <input type="time">
+
+                <Label>Number:</Label>
+                <input type="number">
+
+                <Label>Range:</Label>
+                <input type="range" min="0" max="5">
+
+                <Label>Search:</Label>
+                <input type="search">
+                    
+                <label>Select simples</label>
+                <select>
+                    <option>Esse</option>               
+                    <option>eh</option>
+                    <option>um</option>
+                    <option>select</option>
+                    <optgroup label="esse é um group">
+                        <option>Esse</option>               
+                        <option>eh</option>
+                        <option>um</option>
+                        <option>select</option>
+                    </optgroup>
+                </select>
+
+                <label>Select multiplo</label>
+                <select multiple="multiple">
+                    <option>Esse</option>               
+                    <option>eh</option>
+                    <option>um</option>
+                    <option>select</option>
+                    <optgroup label="esse é um group">
+                        <option>Esse</option>               
+                        <option>eh</option>
+                        <option>um</option>
+                        <option>select</option>
+                    </optgroup>
+                </select>
+
+                <label>Input Radio</label>
+                <input type="radio" name="r" value="c" id="rc" /><label for="rc">Esse é um radio</label>
+
+                <label>Input Checkbox</label>
+                <input type="checkbox" id="check" /><label for="check">Esse é um checkbox</label>
+
+                <label>Textarea</label>
+                <textarea>Esse é um textarea</textarea>
+
+                <label>File</label>
+                <input type="file">
+
+                
+                <label>Input submit</label>
+                <input type="submit" value="submit">
+
+                <label>Input button</label>
+                <input type="button" value="botao">
+
+                <label>Input reset</label>
+                <input type="reset" value="reset">
+
+                <label>Elemento button</label><button>botao</button>
+                <label>.button-like</label><a class="button-like">botao</a>
+            </form>
+
+            <table>
+                <caption>Uma tabela</caption>
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                        <td>cell 4</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <blockquote cite="someone">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </blockquote>
+
+            // flex-box
+
+
+
+        </div>
+
+    </body>
+</html>

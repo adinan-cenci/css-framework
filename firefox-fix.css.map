@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOI,iCAAiB,CACb,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG",
+"sources": ["firefox-fix.scss"],
+"names": [],
+"file": "firefox-fix.css"
+}
