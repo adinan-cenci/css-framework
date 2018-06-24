@@ -1,0 +1,27 @@
+/*************************************
+#*** TABLE
+#************************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px auto 20px auto;
+    caption-side: top;
+}
+
+    caption {
+        padding: 5px;
+        text-align: center;
+        background-color: #e1e1e1;
+    }
+
+    td, th {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    th {
+        font-weight: normal;
+        color: #ffffff;
+        background-color: #005bcc;
+    }

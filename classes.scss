@@ -1,0 +1,46 @@
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.intangible {
+    pointer-events: none;
+}
+
+.text-in-columns {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+
+    column-gap: 40px;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+
+    column-rule: solid 1px #9a9999;
+    -moz-column-rule: solid 1px #9a9999;
+    -webkit-column-rule: solid 1px #9a9999;
+
+    text-align: justify;
+}
