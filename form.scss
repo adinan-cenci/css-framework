@@ -4,8 +4,8 @@
 
 @function input-min-height($lines: 1) 
 {
-    // (14px * 1.3em) * lines + (10px padding * 2) + (1px border * 2)
-    @return ceil($base-font-size * $line-height-ratio * $lines + 20px + 2px);
+    // 18px * lines + (10px padding * 2) + (1px border * 2)
+    @return ceil( round($base-font-size * $line-height-ratio) * $lines + 20px + 2px);
 }
 
 // dimensions
