@@ -10,18 +10,38 @@ table {
 }
 
     caption {
-        padding: 5px;
+        padding: 10px;
         text-align: center;
-        background-color: #e1e1e1;
+        color: #fff;
+        background-color: #3F51B5;
     }
 
     td, th {
         padding: 10px;
+        border: none;
+        border-bottom: solid 1px;
         vertical-align: middle;
     }
 
     th {
+        border-color: #303f9f;
         font-weight: normal;
         color: #ffffff;
-        background-color: #005bcc;
+        background-color: #303F9F;
+    }
+
+    td {
+        border-color: #DFDEE3;
+    }
+
+    th:first-child, 
+    td:first-child {
+        border-left-style: solid;
+        border-left-width: 1px;
+    }
+
+    th:last-child, 
+    td:last-child {
+        border-right-style: solid;
+        border-right-width: 1px;
     }

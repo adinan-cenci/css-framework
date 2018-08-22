@@ -1,4 +1,13 @@
 ol, 
 ul {
+    margin-bottom: 20px;
     list-style-position: inside;
+}
+
+ol ol, 
+ol ul, 
+ul ul, 
+ul ol {
+    padding-left: 20px;
+    margin-bottom: 0px;
 }

@@ -14,12 +14,11 @@ Build sass: CTRL + B
     @return $string;
 }
 
-$base-font-size:    14px;
-$line-height-ratio: 1.285714286;
+$base-font-size:    16px;
+$line-height-ratio: 1.25;
 
 * {
     pointer-events: inherit;
-    position: relative;
     vertical-align: top;
     direction: inherit;
 
@@ -48,11 +47,14 @@ $line-height-ratio: 1.285714286;
 html, 
 body {
     font-family: 'Roboto', 'Arial';
+    color: #212529;
     font-size: $base-font-size;
-    line-height: round($base-font-size * $line-height-ratio);
+    line-height: $base-font-size * $line-height-ratio;
 }
 
+@import 'grids';
 @import 'table';
 @import 'form';
 @import 'lists';
+@import 'text';
 @import 'classes';

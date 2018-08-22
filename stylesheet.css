@@ -1,24 +1,70 @@
+body {
+    overflow-y: scroll;
+}
+
+/*---------------------------------------*/
+
+#header {
+    color: #fff;
+    background-color: #2196F3;
+}
+
+    #header ul {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;        
+    }
+
+        #header ul a {
+            display: block;
+            padding: 20px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 1em;
+            text-decoration: none;
+        }
+
+        #header ul a:hover {
+            background-color: #4FA3E4;
+        }
+
+/*---------------------------------------*/
+
 #middle {
-    width: 960px;
+    width: 1100px;
     padding-top: 40px;
     max-width: 100%;
 }
 
-#inputs-display {
+/*---------------------------------------*/
+
+#example-forms {
     text-align: right;
 }
-    #inputs-display td {
+    #example-forms td {
         width: 50%;
     }
 
-    #inputs-display td:last-child {
+    #example-forms td:last-child {
         text-align: left;
     }
 
-    #inputs-display select, 
-    #inputs-display input, 
-    #inputs-display button, 
-    #inputs-display .btn, 
-    #inputs-display textarea {
+    #example-forms select, 
+    #example-forms input, 
+    #example-forms button, 
+    #example-forms .btn, 
+    #example-forms textarea {
         margin-bottom: 0px;
     }
+
+/*---------------------------------------*/
+
+#example-grids .card {
+    min-height: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
