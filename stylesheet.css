@@ -68,3 +68,13 @@ body {
     margin-bottom: 20px;
     background-color: #fff;
 }
+
+/*---------------------------------------*/
+
+#example-tables {
+    width: 800px;
+    max-width: 100%;
+}
+    #example-tables table {
+        margin-bottom: 60px;
+    }
