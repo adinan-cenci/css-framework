@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
         <title>Document</title>
-        <link rel="stylesheet" href="master.css">
-        <link rel="stylesheet" href="firefox-fix.css">
+        <link rel="stylesheet" href="../css/master.css">
+        <link rel="stylesheet" href="../css/firefox-fix.css">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
@@ -16,13 +17,15 @@
                     <li><a href="lists.html">Lists</a></li>
                     <li><a href="tables.html">Tables</a></li>
                     <li><a href="grids.html">Grids</a></li>
+                    <li><a href="inputs.html">Inputs</a></li>
                     <li><a href="forms.html">Forms</a></li>
+                    <li><a href="modal.html">Modal</a></li>
                 </ul>
             </nav>
         </header>
-    
+
         <div id="middle">
-            <table id="example-forms">
+            <table id="example-forms" class="horizontaly-striped">
                 <tr>
                     <td>Input text</td>
                 <td>
@@ -103,17 +106,17 @@
                 <td>
                     <input type="search">
                 </td></tr>
-                    
+
                 <tr>
                     <td>Select simples</td>
                     <td>
                         <select>
-                            <option>Esse</option>               
+                            <option>Esse</option>
                             <option>eh</option>
                             <option>um</option>
                             <option>select</option>
                             <optgroup label="esse é um group">
-                                <option>Esse</option>               
+                                <option>Esse</option>
                                 <option>eh</option>
                                 <option>um</option>
                                 <option>select</option>
@@ -125,12 +128,12 @@
                     <td>Select multiplo</td>
                     <td>
                         <select multiple="multiple">
-                            <option>Esse</option>               
+                            <option>Esse</option>
                             <option>eh</option>
                             <option>um</option>
                             <option>select</option>
                             <optgroup label="esse é um group">
-                                <option>Esse</option>               
+                                <option>Esse</option>
                                 <option>eh</option>
                                 <option>um</option>
                                 <option>select</option>
@@ -192,15 +195,6 @@
                 </tr>
             </table>
 
-            <div class="row">
-                <div class="col-2">
-                    <label>Nome</label>
-                </div>
-                <div class="col-10">
-                    <input type="text" placeholder="Nome completo">
-                </div>
-            </div>
-            
         </div>
     </body>
 </html>

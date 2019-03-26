@@ -13,7 +13,7 @@ body {
         display: flex;
         padding: 0px;
         margin: 0px;
-        list-style: none;        
+        list-style: none;
     }
 
         #header ul a {
@@ -50,10 +50,10 @@ body {
         text-align: left;
     }
 
-    #example-forms select, 
-    #example-forms input, 
-    #example-forms button, 
-    #example-forms .btn, 
+    #example-forms select,
+    #example-forms input,
+    #example-forms button,
+    #example-forms .btn,
     #example-forms textarea {
         margin-bottom: 0px;
     }
@@ -78,3 +78,13 @@ body {
     #example-tables table {
         margin-bottom: 60px;
     }
+
+/*---------------------------------------*/
+
+#example-modal .fundo-branco {
+    width: 500px;
+    max-width: calc(100% - 40px);
+    height: auto;
+    padding: 40px;
+    background-color: #fff;
+}

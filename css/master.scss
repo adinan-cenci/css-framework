@@ -3,7 +3,7 @@ Build sass: CTRL + B
 */
 
 
-@function str-replace($string, $search, $replace: '') 
+@function str-replace($string, $search, $replace: '')
 {
     $index: str-index($string, $search);
 
@@ -30,10 +30,10 @@ $line-height-ratio: 1.25;
     border: none;
     margin: 0px auto 0px auto;
     outline: none;
-    
+
     font-size: inherit;
     line-height: inherit;
-    
+
     font-family: inherit;
     font-weight: inherit;
     font-style: inherit;
@@ -41,10 +41,10 @@ $line-height-ratio: 1.25;
     text-align: inherit;
 
     background-repeat: no-repeat;
-    background-position: top center;    
+    background-position: top center;
 }
 
-html, 
+html,
 body {
     font-family: 'Roboto', 'Arial';
     color: #212529;
@@ -58,3 +58,4 @@ body {
 @import 'lists';
 @import 'text';
 @import 'classes';
+@import 'overlay';
