@@ -39,23 +39,15 @@ body {
 
 /*---------------------------------------*/
 
-#example-forms {
+#example-inputs {
     text-align: right;
 }
-    #example-forms td {
+    #example-inputs td {
         width: 50%;
     }
 
-    #example-forms td:last-child {
+    #example-inputs td:last-child {
         text-align: left;
-    }
-
-    #example-forms select,
-    #example-forms input,
-    #example-forms button,
-    #example-forms .btn,
-    #example-forms textarea {
-        margin-bottom: 0px;
     }
 
 /*---------------------------------------*/

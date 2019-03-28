@@ -1,0 +1,54 @@
+
+/*************************************
+#*** SIMPLE FORM
+#************************************/
+
+.simple-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.simple-form label {
+    @extend .box-input-dimensions;
+}
+
+.simple-form label,
+.simple-form input,
+.simple-form textarea,
+.simple-form select,
+.simple-form button,
+.simple-form label {
+    margin-bottom: 10px;
+}
+
+/*------------------------------*/
+
+.simple-form label:not([class^=col-]) {
+    @extend .col-2;
+}
+
+.simple-form input:not([class^=col-]),
+.simple-form textarea:not([class^=col-]),
+.simple-form select:not([class^=col-]),
+.simple-form button:not([class^=col-]) {
+    @extend .col-10;
+}
+
+/*------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .simple-form label,
+    .simple-form input,
+    .simple-form textarea,
+    .simple-form select,
+    .simple-form button {
+        width: 100% !important;
+    }
+
+    .simple-form label {
+        margin-bottom: 0px;
+    }
+}

@@ -52,10 +52,11 @@ body {
     line-height: $base-font-size * $line-height-ratio;
 }
 
-@import 'grids';
 @import 'table';
-@import 'form';
+@import 'inputs';
+@import 'forms';
 @import 'lists';
 @import 'text';
+@import 'grids';
 @import 'classes';
 @import 'overlay';

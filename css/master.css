@@ -30,6 +30,350 @@ body {
   line-height: 20px; }
 
 /*************************************
+#*** TABLE
+#************************************/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0px auto 20px auto;
+  caption-side: top; }
+
+caption {
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  background-color: #C5D3F6; }
+
+td, th {
+  padding: 10px;
+  border: none;
+  vertical-align: middle; }
+
+th {
+  border-color: #303f9f;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  background-color: #303F9F; }
+
+thead th {
+  border-color: #3F51B5;
+  background-color: #3F51B5; }
+
+td {
+  border-color: #DFDEE3; }
+
+th:first-child,
+td:first-child {
+  border-left-style: solid;
+  border-left-width: 1px; }
+
+th:last-child,
+td:last-child {
+  border-right-style: solid;
+  border-right-width: 1px; }
+
+tr:last-child td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px; }
+
+table.horizontaly-borded td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px; }
+table.horizontaly-borded th:first-child,
+table.horizontaly-borded td:first-child {
+  border-left-style: solid;
+  border-left-width: 1px; }
+table.horizontaly-borded th:last-child,
+table.horizontaly-borded td:last-child {
+  border-right-style: solid;
+  border-right-width: 1px; }
+
+table.verticaly-borded td, table.verticaly-borded th {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px; }
+table.verticaly-borded tr:last-child td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px; }
+
+/*------------------------------------------*/
+table.horizontaly-striped tr:nth-child(2n+0) td {
+  background-color: #F8F7FF; }
+
+table.verticaly-striped td:nth-child(2n+0) {
+  background-color: #F8F7FF; }
+
+/*------------------------------------------*/
+table.highlights tr:hover td {
+  background-color: #EDECFE; }
+
+/*************************************
+#*** FORMS
+#************************************/
+.box-input-dimensions, textarea,
+select,
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=number],
+input[type=search], button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+.btn, input[type=color], input[type=file], .simple-form label {
+  height: 42px;
+  padding: 10px;
+  border: solid 1px transparent;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #fff; }
+
+.text-input, textarea,
+select,
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=number],
+input[type=search], input[type=file] {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 215px;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  color: #555;
+  background-color: #fff; }
+
+.button-input, button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: solid 1px #337ab7;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7; }
+
+.button-input:hover, button:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+.btn:hover {
+  color: #fff; }
+
+/*************************************
+#*** INPUT TYPE TEXT
+#************************************/
+textarea:focus,
+select:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=number]:focus,
+input[type=search]:focus {
+  border: solid 1px #51a7e8;
+  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5); }
+
+textarea {
+  height: auto;
+  min-height: 122px; }
+
+/*************************************
+#*** INPUT BUTTONS
+#************************************/
+.btn {
+  text-decoration: none; }
+
+/*************************************
+#*** SELECT
+#************************************/
+select[multiple] {
+  height: auto; }
+  select[multiple] option {
+    padding: 5px; }
+
+/*************************************
+#*** COLOR
+#************************************/
+input[type=color] {
+  padding: 3px 5px 3px 5px; }
+
+/*************************************
+#*** CHECKS AND RADIOS BUTTONS
+#************************************/
+/*
+input[type=checkbox],
+input[type=radio] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    $margin: (input-min-height() - 16px) / 2;
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+*/
+input[type=radio],
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  position: relative;
+  width: 25px;
+  height: 42px; }
+
+input[type=radio]:after,
+input[type=checkbox]:after {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: calc((42px - 25px) / 2);
+  width: 25px;
+  height: 25px;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 23px;
+  content: '';
+  background-color: #fff; }
+
+input[type=radio]:after {
+  border-radius: 50px;
+  font-size: 55px; }
+
+input[type=radio]:checked:after {
+  background: radial-gradient(#333 0%, #333 25%, white 30%); }
+
+input[type=checkbox]:checked:after {
+  content: '\2714'; }
+
+/*************************************
+#*** INPUT FILE
+#************************************/
+/*as expected, it works wonderfuly in chrome, but like crap in firefox*/
+input[type=file] {
+  padding: 8px 10px 10px 10px; }
+
+/*************************************
+#*** SIMPLE FORM
+#************************************/
+.simple-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start; }
+
+.simple-form label,
+.simple-form input,
+.simple-form textarea,
+.simple-form select,
+.simple-form button,
+.simple-form label {
+  margin-bottom: 10px; }
+
+/*------------------------------*/
+/*------------------------------*/
+@media screen and (max-width: 768px) {
+  .simple-form label,
+  .simple-form input,
+  .simple-form textarea,
+  .simple-form select,
+  .simple-form button {
+    width: 100% !important; }
+
+  .simple-form label {
+    margin-bottom: 0px; } }
+ol,
+ul {
+  margin-bottom: 20px;
+  list-style-position: inside; }
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+  padding-left: 20px;
+  margin-bottom: 0px; }
+
+/*************************************
+#*** TEXT
+#************************************/
+/* I wan't to make this something scalable, always multiple of 2 */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px; }
+
+h1 {
+  font-size: 34px;
+  line-height: 38px; }
+
+h2 {
+  font-size: 30px;
+  line-height: 36px; }
+
+h3 {
+  font-size: 26px;
+  line-height: 30px; }
+
+h4 {
+  font-size: 22px;
+  line-height: 26px; }
+
+h5 {
+  font-size: 18px;
+  line-height: 22px; }
+
+h6 {
+  font-size: 14px;
+  line-height: 18px; }
+
+p {
+  margin-bottom: 20px; }
+
+strong, b {
+  font-weight: bold; }
+
+i {
+  font-style: italic; }
+
+a:link {
+  color: green; }
+
+a:visited {
+  color: darkmagenta; }
+
+a:hover {
+  color: darkgreen; }
+
+a:active {
+  color: red; }
+
+/*************************************
 #*** GRID
 #************************************/
 .row {
@@ -39,14 +383,25 @@ body {
   justify-content: flex-start;
   margin: 0px -10px 60px -10px; }
 
-.row [class^=col-] {
+.row > [class^=col-] {
   padding: 0px 10px;
   margin: 0px 0px 20px 0px; }
 
+/*-----------------------------------*/
+.row.no-gutters {
+  margin: 0px; }
+
+.row.no-gutters > [class^=col-] {
+  padding: 0px;
+  margin: 0px; }
+
+/*************************************
+#*** COLUMNS
+#************************************/
 .col-1 {
   width: 8.33%; }
 
-.col-2 {
+.col-2, .simple-form label:not([class^=col-]) {
   width: 16.66%; }
 
 .col-3 {
@@ -70,7 +425,10 @@ body {
 .col-9 {
   width: 75%; }
 
-.col-10 {
+.col-10, .simple-form input:not([class^=col-]),
+.simple-form textarea:not([class^=col-]),
+.simple-form select:not([class^=col-]),
+.simple-form button:not([class^=col-]) {
   width: 83.33%; }
 
 .col-11 {
@@ -223,323 +581,6 @@ body {
 
   .col-xl-12 {
     width: 100%; } }
-/*************************************
-#*** TABLE
-#************************************/
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0px auto 20px auto;
-  caption-side: top; }
-
-caption {
-  padding: 10px;
-  text-align: center;
-  color: #333;
-  background-color: #C5D3F6; }
-
-td, th {
-  padding: 10px;
-  border: none;
-  vertical-align: middle; }
-
-th {
-  border-color: #303f9f;
-  font-weight: normal;
-  color: #ffffff;
-  text-align: center;
-  background-color: #303F9F; }
-
-thead th {
-  border-color: #3F51B5;
-  background-color: #3F51B5; }
-
-td {
-  border-color: #DFDEE3; }
-
-th:first-child,
-td:first-child {
-  border-left-style: solid;
-  border-left-width: 1px; }
-
-th:last-child,
-td:last-child {
-  border-right-style: solid;
-  border-right-width: 1px; }
-
-tr:last-child td {
-  border-bottom-style: solid;
-  border-bottom-width: 1px; }
-
-table.horizontaly-borded td {
-  border-bottom-style: solid;
-  border-bottom-width: 1px; }
-table.horizontaly-borded th:first-child,
-table.horizontaly-borded td:first-child {
-  border-left-style: solid;
-  border-left-width: 1px; }
-table.horizontaly-borded th:last-child,
-table.horizontaly-borded td:last-child {
-  border-right-style: solid;
-  border-right-width: 1px; }
-
-table.verticaly-borded td, table.verticaly-borded th {
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-style: solid;
-  border-right-width: 1px; }
-table.verticaly-borded tr:last-child td {
-  border-bottom-style: solid;
-  border-bottom-width: 1px; }
-
-/*------------------------------------------*/
-table.horizontaly-striped tr:nth-child(2n+0) td {
-  background-color: #F8F7FF; }
-
-table.verticaly-striped td:nth-child(2n+0) {
-  background-color: #F8F7FF; }
-
-/*------------------------------------------*/
-table.highlights tr:hover td {
-  background-color: #EDECFE; }
-
-/*************************************
-#*** FORMS
-#************************************/
-.box-input-dimensions, label.padded, textarea,
-select,
-input[type=text],
-input[type=password],
-input[type=url],
-input[type=email],
-input[type=tel],
-input[type=date],
-input[type=datetime-local],
-input[type=month],
-input[type=week],
-input[type=time],
-input[type=number],
-input[type=search], button,
-input[type=submit],
-input[type=button],
-input[type=reset],
-.btn, input[type=color], input[type=file] {
-  height: 42px;
-  padding: 10px;
-  border: solid 1px transparent;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  background-color: #fff; }
-
-.text-input, textarea,
-select,
-input[type=text],
-input[type=password],
-input[type=url],
-input[type=email],
-input[type=tel],
-input[type=date],
-input[type=datetime-local],
-input[type=month],
-input[type=week],
-input[type=time],
-input[type=number],
-input[type=search], input[type=file] {
-  display: inline-block;
-  vertical-align: top;
-  min-width: 215px;
-  border: solid 1px #ccc;
-  border-radius: 3px;
-  color: #555;
-  background-color: #fff; }
-
-.button-input, button,
-input[type=submit],
-input[type=button],
-input[type=reset],
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  border: solid 1px #337ab7;
-  border-radius: 3px;
-  color: #fff;
-  text-align: center;
-  background-color: #337ab7; }
-
-/*************************************
-#*** INPUT TYPE TEXT
-#************************************/
-label.padded {
-  display: inline-block;
-  vertical-align: top;
-  border-color: transparent; }
-
-/*************************************
-#*** INPUT TYPE TEXT
-#************************************/
-textarea:focus,
-select:focus,
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=url]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-input[type=date]:focus,
-input[type=datetime-local]:focus,
-input[type=month]:focus,
-input[type=week]:focus,
-input[type=time]:focus,
-input[type=number]:focus,
-input[type=search]:focus {
-  border: solid 1px #51a7e8;
-  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5); }
-
-textarea {
-  height: auto;
-  min-height: 122px; }
-
-/*************************************
-#*** INPUT BUTTONS
-#************************************/
-.btn {
-  text-decoration: none; }
-
-/*************************************
-#*** SELECT
-#************************************/
-select[multiple] {
-  height: auto; }
-  select[multiple] option {
-    padding: 5px; }
-
-/*************************************
-#*** COLOR
-#************************************/
-input[type=color] {
-  padding: 3px 5px 3px 5px; }
-
-/*************************************
-#*** CHECKS AND RADIOS BUTTONS
-#************************************/
-/*
-input[type=checkbox],
-input[type=radio] {
-    appearance: none;    
-    width: 16px;
-    height: 16px;
-    $margin: (input-min-height() - 16px) / 2;
-    margin-top: $margin;
-    margin-bottom: $margin;
-}
-*/
-input[type=radio],
-input[type=checkbox] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-  position: relative;
-  width: 25px;
-  height: 42px; }
-
-input[type=radio]:after,
-input[type=checkbox]:after {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: calc((42px - 25px) / 2);
-  width: 25px;
-  height: 25px;
-  border: solid 1px #ddd;
-  border-radius: 3px;
-  text-align: center;
-  line-height: 23px;
-  content: '';
-  background-color: #fff; }
-
-input[type=radio]:after {
-  border-radius: 50px;
-  font-size: 55px; }
-
-input[type=radio]:checked:after {
-  background: radial-gradient(#333 0%, #333 25%, white 30%); }
-
-input[type=checkbox]:checked:after {
-  content: '\2714'; }
-
-/*************************************
-#*** INPUT FILE
-#************************************/
-/*as expected, it works wonderfuly in chrome, but like crap in firefox*/
-input[type=file] {
-  padding: 8px 10px 10px 10px; }
-
-ol,
-ul {
-  margin-bottom: 20px;
-  list-style-position: inside; }
-
-ol ol,
-ol ul,
-ul ul,
-ul ol {
-  padding-left: 20px;
-  margin-bottom: 0px; }
-
-/*************************************
-#*** TEXT
-#************************************/
-/* I wan't to make this something scalable, always multiple of 2 */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 20px; }
-
-h1 {
-  font-size: 34px;
-  line-height: 38px; }
-
-h2 {
-  font-size: 30px;
-  line-height: 36px; }
-
-h3 {
-  font-size: 26px;
-  line-height: 30px; }
-
-h4 {
-  font-size: 22px;
-  line-height: 26px; }
-
-h5 {
-  font-size: 18px;
-  line-height: 22px; }
-
-h6 {
-  font-size: 14px;
-  line-height: 18px; }
-
-p {
-  margin-bottom: 20px; }
-
-strong, b {
-  font-weight: bold; }
-
-i {
-  font-style: italic; }
-
-a:link {
-  color: green; }
-
-a:visited {
-  color: darkmagenta; }
-
-a:hover {
-  color: darkgreen; }
-
-a:active {
-  color: red; }
-
 .column {
   display: inline-block;
   vertical-align: top; }

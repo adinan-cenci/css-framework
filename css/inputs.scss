@@ -2,19 +2,18 @@
 #*** FORMS
 #************************************/
 
-@function input-min-height($lines: 1) 
+@function input-min-height($lines: 1)
 {
     // 18px * lines + (10px padding * 2) + (1px border * 2)
     @return ceil( round($base-font-size * $line-height-ratio) * $lines + 20px + 2px);
 }
 
 // dimensions
-.box-input-dimensions { 
+.box-input-dimensions {
     height: input-min-height();
 
     padding: 10px;
     border: solid 1px transparent;
-    margin-bottom: 10px;
 
     font-size: $base-font-size;
     line-height: $base-font-size * $line-height-ratio;
@@ -37,23 +36,15 @@
 .button-input {
     cursor: pointer;
     display: inline-block;
-    border: solid 1px #337ab7;    
+    border: solid 1px #337ab7;
     border-radius: 3px;
     color: #fff;
     text-align: center;
     background-color: #337ab7;
 }
 
-/*************************************
-#*** INPUT TYPE TEXT
-#************************************/
-
-label.padded {
-    display: inline-block;
-    vertical-align: top;
-
-    @extend .box-input-dimensions;
-    border-color: transparent;
+.button-input:hover {
+    color: #fff;
 }
 
 /*************************************
@@ -108,7 +99,7 @@ textarea {
 button,
 input[type=submit],
 input[type=button],
-input[type=reset], 
+input[type=reset],
 .btn {
     @extend .box-input-dimensions;
     @extend .button-input;
@@ -123,7 +114,7 @@ input[type=reset],
 #************************************/
 
 select[multiple] {
-    
+
     height: auto;
 
     option {
@@ -146,7 +137,7 @@ input[type=color] {
 /*
 input[type=checkbox],
 input[type=radio] {
-    appearance: none;    
+    appearance: none;
     width: 16px;
     height: 16px;
     $margin: (input-min-height() - 16px) / 2;
@@ -154,7 +145,7 @@ input[type=radio] {
     margin-bottom: $margin;
 }
 */
-input[type=radio], 
+input[type=radio],
 input[type=checkbox] {
     appearance: none;
     -webkit-appearance: none;
@@ -166,7 +157,7 @@ input[type=checkbox] {
     height: input-min-height();
 }
 
-input[type=radio]:after, 
+input[type=radio]:after,
 input[type=checkbox]:after {
     box-sizing: border-box;
     display: block;
