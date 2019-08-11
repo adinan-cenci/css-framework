@@ -2,7 +2,6 @@
 Build sass: CTRL + B
 */
 
-
 @function str-replace($string, $search, $replace: '')
 {
     $index: str-index($string, $search);
@@ -15,7 +14,7 @@ Build sass: CTRL + B
 }
 
 $base-font-size:    16px;
-$line-height-ratio: 1.25;
+$line-height-ratio: 1.5;
 
 * {
     pointer-events: inherit;
@@ -49,14 +48,14 @@ body {
     font-family: 'Roboto', 'Arial';
     color: #212529;
     font-size: $base-font-size;
-    line-height: $base-font-size * $line-height-ratio;
+    line-height: $line-height-ratio;
 }
 
-@import 'table';
-@import 'inputs';
-@import 'forms';
-@import 'lists';
-@import 'text';
-@import 'grids';
-@import 'classes';
-@import 'overlay';
+@import 'table.scss';
+@import 'inputs.scss';
+@import 'forms.scss';
+@import 'lists.scss';
+@import 'text.scss';
+@import 'grids.scss';
+@import 'classes.scss';
+@import 'overlay.scss';

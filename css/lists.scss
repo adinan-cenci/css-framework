@@ -1,13 +1,16 @@
-ol, 
+ol,
 ul {
+    padding-left: 25px;
     margin-bottom: 20px;
-    list-style-position: inside;
 }
 
-ol ol, 
-ol ul, 
-ul ul, 
+ol ol,
+ol ul,
+ul ul,
 ul ol {
-    padding-left: 20px;
     margin-bottom: 0px;
+}
+
+li + li {
+    margin-top: 2px;
 }

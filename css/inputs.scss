@@ -64,7 +64,8 @@ input[type=month],
 input[type=week],
 input[type=time],
 input[type=number],
-input[type=search] {
+input[type=search],
+input[type=file] {
     @extend .box-input-dimensions;
     @extend .text-input;
 }
@@ -82,7 +83,8 @@ input[type=month]:focus,
 input[type=week]:focus,
 input[type=time]:focus,
 input[type=number]:focus,
-input[type=search]:focus {
+input[type=search]:focus,
+input[type=file]:focus {
     border: solid 1px #51a7e8;
     box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
 }
@@ -185,17 +187,4 @@ input[type=radio]:checked:after {
 
 input[type=checkbox]:checked:after {
     content: '\2714';
-}
-
-
-/*************************************
-#*** INPUT FILE
-#************************************/
-
-/*as expected, it works wonderfuly in chrome, but like crap in firefox*/
-input[type=file] {
-    @extend .box-input-dimensions;
-    @extend .text-input;
-
-    padding: 8px 10px 10px 10px;
 }

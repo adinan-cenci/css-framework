@@ -1,3 +1,4 @@
+
 /*************************************
 #*** TABLE
 #************************************/
@@ -39,13 +40,13 @@ table {
         border-color: #DFDEE3;
     }
 
-    th:first-child, 
+    th:first-child,
     td:first-child {
         border-left-style: solid;
         border-left-width: 1px;
     }
-    
-    th:last-child, 
+
+    th:last-child,
     td:last-child {
         border-right-style: solid;
         border-right-width: 1px;
@@ -59,18 +60,18 @@ table {
 
 table.horizontaly-borded {
 
-    td {        
+    td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
 
-    th:first-child, 
+    th:first-child,
     td:first-child {
         border-left-style: solid;
         border-left-width: 1px;
     }
 
-    th:last-child, 
+    th:last-child,
     td:last-child {
         border-right-style: solid;
         border-right-width: 1px;
@@ -81,7 +82,7 @@ table.verticaly-borded {
 
     td, th {
         border-left-style: solid;
-        border-left-width: 1px;        
+        border-left-width: 1px;
         border-right-style: solid;
         border-right-width: 1px;
     }
