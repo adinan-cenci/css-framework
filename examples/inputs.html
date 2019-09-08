@@ -34,7 +34,7 @@
 
                 <tr><td>Disabled</td>
                 <td>
-                    <input type="text" disabled="disabled" value="desabilitado" />
+                    <input type="text" disabled value="desabilitado" />
                 </td></tr>
 
                 <tr><td>read only</td>
@@ -54,12 +54,12 @@
 
                 <tr><td>Email:</td>
                 <td>
-                    <input type="email">
+                    <input type="email" value="foo@bar.com">
                 </td></tr>
 
                 <tr><td>Tel:</td>
                 <td>
-                    <input type="tel">
+                    <input type="tel" value="+55 11 12345-6789">
                 </td></tr>
 
                 <tr><td>Color:</td>
@@ -69,12 +69,12 @@
 
                 <tr><td>Date:</td>
                 <td>
-                    <input type="date">
+                    <input type="date" value="2019-01-01">
                 </td></tr>
 
                 <tr><td>datetime-local:</td>
                 <td>
-                    <input type="datetime-local">
+                    <input type="datetime-local" value="2019-01-01T12:30">
                 </td></tr>
 
                 <tr><td>Month:</td>
@@ -144,7 +144,7 @@
                 <tr>
                     <td>Input Radio</td>
                     <td>
-                        <input type="radio" name="r" value="c" id="rc" />
+                        <input type="radio" name="r" value="a"/> <input type="radio" name="r" value="b"/>
                     </td>
                 </tr>
                 <tr>
@@ -184,14 +184,30 @@
                         <input type="reset" value="reset">
                     </td>
                 </tr>
-
                 <tr>
                     <td>Elemento button</td>
                     <td><button>botao</button></td>
                 </tr>
                 <tr>
                     <td>.btn</td>
-                    <td><a class="btn">botao</a></td>
+                    <td><a class="btn">button</a></td>
+                </tr>
+                <tr>
+                    <td>.button-main</td>
+                    <td><button class="button-main">button</button></td>
+                </tr>
+                <tr>
+                    <td>.button-danger</td>
+                    <td><button class="button-danger">button</button></td>
+                </tr>
+                <tr>
+                    <td>:disabled</td>
+                    <td><button disabled>disabled</button></td>
+                </tr>
+
+                <tr>
+                    <td>Progress bar</td>
+                    <td><progress value="75" max="100"></progress></td>
                 </tr>
             </table>
 
