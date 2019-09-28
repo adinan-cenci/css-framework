@@ -11,7 +11,7 @@
 }
 
 .simple-form label {
-    @extend .box-input-dimensions;
+    @extend %box-input-dimensions;
 }
 
 .simple-form label,

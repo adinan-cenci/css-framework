@@ -53,22 +53,34 @@
             <br>
             <br>
 
-            <h1>tempor incididunt ut labore et</h1>
-            <h2>tempor incididunt ut labore et</h2>
-            <h3>tempor incididunt ut labore et</h3>
-            <h4>tempor incididunt ut labore et</h4>
-            <h5>tempor incididunt ut labore et</h5>
-            <h6>tempor incididunt ut labore et</h6>
+            <h1>Header 1 - Lorem ipsum dolor sit ...</h1>
+            <h2>Header 2 - Lorem ipsum dolor sit ...</h2>
+            <h3>Header 3 - Lorem ipsum dolor sit ...</h3>
+            <h4>Header 4 - Lorem ipsum dolor sit ...</h4>
+            <h5>Header 5 - Lorem ipsum dolor sit ...</h5>
+            <h6>Header 6 - Lorem ipsum dolor sit ...</h6>
 
             <p>
-                <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod<br>
-                <b>tempor incididunt ut</b> labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
-                <u>quis nostrud exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo<br>
-                <s>consequat. Duis aute irure dolor</s> in reprehenderit in voluptate velit esse<br>
-                <i>cillum dolore eu fugiat</i> nulla pariatur. Excepteur sint occaecat cupidatat non<br>
-                <a href="http://google.com" target="_blank">proident, sunt in culpa qui officia</a> deserunt mollit <a href="http://foobar.com">anim id est</a> laborum.
+                <strong>strong</strong><br>
+                <b>bold</b><br>
+                <u>underline</u><br>
+                <s>strike through</s><br>
+                <em>enfasis</em><br>
+                <i>italic</i><br>
+                <abbr title="abbreviation">abbreviation</abbr><br>
+                <blockquote>
+                    Only in death does duty ends.
+                    <cite>Popular astartes saying</cite>
+                </blockquote>
+                
+                <a href="" id="never-visited-link" target="_blank">Link</a><br>
+                <a href="http://google.com" target="_blank">Link 2</a>
+                
             </p>
 
         </div>
+        <script>
+        document.querySelector('#never-visited-link').setAttribute('href', 'http://'+Date.now()+'.com')
+        </script>
     </body>
 </html>

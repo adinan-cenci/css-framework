@@ -51,12 +51,12 @@ body {
     line-height: $line-height-ratio;
 }
 
-@import 'blocks.scss';
-@import 'table.scss';
-@import 'inputs.scss';
-@import 'forms.scss';
-@import 'lists.scss';
-@import 'text.scss';
-@import 'grids.scss';
-@import 'classes.scss';
-@import 'overlay.scss';
+@import '../dependable/blocks.scss';
+@import '../dependable/table.scss';
+@import '../dependable/inputs.scss';
+@import '../dependable/forms.scss';
+@import '../dependable/lists.scss';
+@import '../dependable/text.scss';
+@import '../dependable/grids.scss';
+@import '../dependable/classes.scss';
+@import '../dependable/overlay.scss';

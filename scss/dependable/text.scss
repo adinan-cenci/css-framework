@@ -48,8 +48,48 @@ strong, b {
     font-weight: bold;
 }
 
-i {
+em, i {
     font-style: italic;
+}
+
+abbr[title] {
+    cursor: help;
+}
+
+/* blockquote, cite */
+
+blockquote {
+    padding: 10px 20px;
+    border-left: solid 3px grey;
+    margin-bottom: 20px;
+}
+
+    blockquote cite {
+        display: block;
+        font-style: italic;
+        font-size: 0.8em;
+        line-height: $line-height-ratio;
+    }
+
+code, 
+samp {
+    font-family: 'Courier'; /* monospace */
+}
+
+var {
+    
+}
+
+sup {
+    
+}
+
+sub {
+    
+}
+
+time {
+    
 }
 
 a {

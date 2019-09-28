@@ -3,12 +3,12 @@
 #*** TABLE
 #************************************/
 
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     margin: 0px auto 20px auto;
     caption-side: top;
-}
+
 
     caption {
         padding: 10px;
@@ -55,9 +55,9 @@ table {
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
+}
 
-
-table.horizontaly-borded {
+.table.horizontaly-borded {
 
     td {
         border-bottom-style: solid;
@@ -77,7 +77,7 @@ table.horizontaly-borded {
     }
 }
 
-table.verticaly-borded {
+.table.verticaly-borded {
 
     td, th {
         border-left-style: solid;
@@ -94,14 +94,14 @@ table.verticaly-borded {
 
 /*------------------------------------------*/
 
-table.horizontaly-striped {
+.table.horizontaly-striped {
 
     tr:nth-child(2n+0) td {
         background-color: #F8F7FF
     }
 }
 
-table.verticaly-striped {
+.table.verticaly-striped {
     td:nth-child(2n+0) {
         background-color: #F8F7FF
     }
@@ -109,6 +109,6 @@ table.verticaly-striped {
 
 /*------------------------------------------*/
 
-table.highlights tr:hover td {
+.table.highlights tr:hover td {
     background-color: #EDECFE;
 }
