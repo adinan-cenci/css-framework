@@ -2,10 +2,13 @@
 #*** INPUTS
 #************************************/
 
+$padding: 10px;
+$border: 1px;
+
 @function input-min-height($lines: 1)
 {
     // 18px * lines + (10px padding * 2) + (1px border * 2)
-    @return ceil( round($base-font-size * $line-height-ratio) * $lines + 20px + 2px);
+    @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding * 2 ) + ( $border * 2 ) );
 }
 
 /*************************************
@@ -16,8 +19,8 @@
     display: inline-flex;
     height: input-min-height();
 
-    padding: 10px;
-    border: solid 1px transparent;
+    padding: $padding;
+    border: solid $border transparent;
 
     font-size: $base-font-size;
     line-height: $base-font-size * $line-height-ratio;
@@ -31,7 +34,7 @@
 
 %text-input-looks {
     min-width: 215px;
-    border: solid 1px #919191;
+    border: solid $border #919191;
     border-radius: 3px;
     color: #555;
     background-color: #fff;
@@ -43,13 +46,13 @@
 
 %text-input-looks[disabled] {
     cursor: not-allowed;
-    border: solid 1px #b9bcb5;
+    border: solid $border #b9bcb5;
     color: #7a7a79;
     background-color: #f4f4f2;
 }
 
 %text-input-looks:focus {
-    border: solid 1px #51a7e8;
+    border: solid $border #51a7e8;
     box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
 }
 
@@ -60,7 +63,7 @@
 %button-input-looks {
     min-width: input-min-height();
     cursor: pointer;
-    border: solid 1px #a7a7a7;
+    border: solid $border #a7a7a7;
     border-radius: 3px;
     text-align: center;
     justify-content: center; /* flex-inline buttons will treat text just as an element*/
@@ -208,7 +211,7 @@
         top: calc((#{input-min-height()} - 25px) / 2);
         width: 25px;
         height: 25px;
-        border: solid 1px #a1a1a1;
+        border: solid $border #a1a1a1;
         border-radius: 3px;
         text-align: center;
         line-height: 23px;
@@ -257,7 +260,7 @@
         padding: 20px;
         border-radius: 3px;
         margin-bottom: 20px;
-        border: solid 1px #a7a7a7;
+        border: solid $border #a7a7a7;
 
         legend {
             padding: 0px 20px;
