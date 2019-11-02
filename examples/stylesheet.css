@@ -54,6 +54,10 @@ body {
         text-align: left;
     }
 
+    #example-inputs th {
+        text-align: center;
+    }
+
 /*---------------------------------------*/
 
 #example-grids .card {

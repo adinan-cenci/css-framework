@@ -8,19 +8,22 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: flex-start;
-}
 
-.simple-form label {
-    @extend %box-input-dimensions;
-}
 
-.simple-form label,
-.simple-form input,
-.simple-form textarea,
-.simple-form select,
-.simple-form button,
-.simple-form label {
-    margin-bottom: 10px;
+    label {
+        @extend %box-input-dimensions;
+    }
+    
+
+    label,
+    input,
+    textarea,
+    select,
+    button,
+    label {
+        margin-bottom: 10px;
+    }
+
 }
 
 /*------------------------------*/

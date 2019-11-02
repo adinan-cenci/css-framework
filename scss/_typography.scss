@@ -1,0 +1,123 @@
+.simple {
+/*************************************
+#*** HEADERS
+#************************************/
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: $line-height-ratio;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        line-height: $line-height-ratio;
+    }
+
+    h3 {
+        font-size: 1.25em;
+        line-height: $line-height-ratio;
+    }
+
+    h4 {
+        font-size: 1em;
+        line-height: $line-height-ratio;
+    }
+
+    h5 {
+        font-size: 0.875em;
+        line-height: $line-height-ratio;
+    }
+
+    h6 {
+        font-size: .85em;
+        line-height: $line-height-ratio;
+    }
+
+    /*************************************
+    #*** BLOCKS OF TEXT
+    #************************************/
+
+    blockquote {
+        padding: 10px 20px;
+        border-left: solid 3px grey;
+        margin-bottom: 20px;
+
+        cite {
+            display: block;
+            font-style: italic;
+            font-size: 0.8em;
+            line-height: $line-height-ratio;
+        }
+    }
+
+    /*************************************
+    #*** INLINE TEXT
+    #************************************/
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    strong, b {
+        font-weight: bold;
+    }
+
+    em, i {
+        font-style: italic;
+    }
+
+    abbr[title] {
+        cursor: help;
+    }
+
+    code, 
+    samp {
+        font-family: 'Source Code Pro', 'Courier'; /* monospace */
+    }
+
+    var {
+        
+    }
+
+    sup {
+        
+    }
+
+    sub {
+        
+    }
+
+    time {
+        
+    }
+
+    /*************************************
+    #*** LINK
+    #************************************/
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #0366d6;
+    }
+
+    a:visited {
+        color: darkmagenta;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: red;
+    }
+}

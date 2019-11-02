@@ -1,0 +1,268 @@
+/*************************************
+#*** INPUTS
+#************************************/
+
+@function input-min-height($lines: 1)
+{
+    // 18px * lines + (10px padding * 2) + (1px border * 2)
+    @return ceil( round($base-font-size * $line-height-ratio) * $lines + 20px + 2px);
+}
+
+/*************************************
+#*** DIMENSIONS
+#************************************/
+
+%box-input-dimensions {
+    display: inline-flex;
+    height: input-min-height();
+
+    padding: 10px;
+    border: solid 1px transparent;
+
+    font-size: $base-font-size;
+    line-height: $base-font-size * $line-height-ratio;
+
+    background-color: #fff;
+}
+
+/*************************************
+#*** Input text, select, textarea
+#************************************/
+
+%text-input-looks {
+    min-width: 215px;
+    border: solid 1px #919191;
+    border-radius: 3px;
+    color: #555;
+    background-color: #fff;
+}
+
+%text-input-looks::-webkit-input-placeholder {
+    color: #8d8f8a;
+}
+
+%text-input-looks[disabled] {
+    cursor: not-allowed;
+    border: solid 1px #b9bcb5;
+    color: #7a7a79;
+    background-color: #f4f4f2;
+}
+
+%text-input-looks:focus {
+    border: solid 1px #51a7e8;
+    box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+/*************************************
+#*** BUTTONS
+#************************************/
+
+%button-input-looks {
+    min-width: input-min-height();
+    cursor: pointer;
+    border: solid 1px #a7a7a7;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center; /* flex-inline buttons will treat text just as an element*/
+    color: #2e3436;
+    background-color: #eaeaea;
+}
+
+%button-input-looks:active,
+%button-input-looks.active {
+    background-color: #dbdbdb;
+}
+
+%button-input-looks:hover {
+    text-decoration: none;
+    color: #2e3436;
+}
+
+%button-input-looks[disabled] {    
+    cursor: not-allowed;
+    border-color: #b9bcb5;
+    color: #909394;
+    background-color: #f2f2f2
+}
+
+/*-----------*/
+
+%button-input-looks.button-main {
+    border-color: #1c5288;
+    color: #fff;
+    background-color: #4a90d9;
+}
+
+%button-input-looks.button-main:hover {
+    color: #fff;
+}
+
+%button-input-looks.button-main:active {
+    background-color: #3b81ca;
+}
+
+/*-----------*/
+
+%button-input-looks.button-danger {
+    border-color: #910f0f;
+    color: #fff;
+    background-color: #ee2222;
+}
+
+%button-input-looks.button-danger:hover {
+    color: #fff;
+}
+
+%button-input-looks.button-danger:active {
+    background-color: #df1313;
+}
+
+.simple {
+    /*************************************
+    #*** Selectors: Input text
+    #************************************/
+
+    textarea, 
+    select, 
+    input[type=text], 
+    input[type=password], 
+    input[type=url], 
+    input[type=email], 
+    input[type=tel], 
+    input[type=date], 
+    input[type=datetime-local], 
+    input[type=month], 
+    input[type=week], 
+    input[type=time], 
+    input[type=number], 
+    input[type=search], 
+    input[type=file], 
+    input[type=color] {
+        @extend %box-input-dimensions;
+        @extend %text-input-looks;
+    }
+
+    textarea {
+        height: auto;
+        min-height: input-min-height(5);
+    }
+
+    /*************************************
+    #*** Selectors: Input buttons
+    #************************************/
+
+    button,
+    input[type=submit],
+    input[type=button],
+    input[type=reset],
+    .btn {
+        @extend %box-input-dimensions;
+        @extend %button-input-looks;
+    }
+
+    .btn {
+        text-decoration: none;
+    }
+
+    /*************************************
+    #*** Selectors: SELECT
+    #************************************/
+
+    select[multiple] {
+        height: auto;
+        option {
+            padding: 5px;
+        }
+    }
+
+    /*************************************
+    #*** COLOR
+    #************************************/
+
+    input[type=color] {
+        padding: 2px 5px;
+    }
+
+    /*************************************
+    #*** CHECKS AND RADIOS BUTTONS
+    #************************************/
+
+    input[type=radio], 
+    input[type=checkbox] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+        position: relative;
+
+        width: 25px;
+        height: input-min-height();
+    }
+
+    input[type=radio]:after,
+    input[type=checkbox]:after {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: calc((#{input-min-height()} - 25px) / 2);
+        width: 25px;
+        height: 25px;
+        border: solid 1px #a1a1a1;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 23px;
+        color: #2e3436;
+        content: '';
+        background-color: #e4e4e4;
+    }
+
+    input[type=checkbox]:checked:after {
+        content: '\2714';
+    }
+
+    /* radio */
+
+    input[type=radio]:after {
+        border-radius: 50px;
+        font-size: 55px;
+    }
+
+    input[type=radio]:checked:after {
+        background: radial-gradient(#2e3436 0%, #2e3436 25%, #e4e4e4 30%);
+    }
+
+    /*************************************
+    #*** Selectors: PROGRESS BAR
+    #************************************/
+
+    progress::-webkit-progress-bar {
+        -webkit-appearance: none;
+        border-radius: 3px;
+        background-color: #dbdbdb;
+        box-shadow: inset 1px 1px #919191, inset -1px -1px #919191;
+    }
+
+    progress::-webkit-progress-value {
+        border-radius: 3px;
+        background-color: #4a90d9;
+        box-shadow: inset 1px 1px #1c5288, inset -1px -1px #1c5288;
+    }
+
+    /*************************************
+    #*** Selectors: FIELDSET
+    #************************************/
+
+    fieldset {
+        padding: 20px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        border: solid 1px #a7a7a7;
+
+        legend {
+            padding: 0px 20px;
+            margin: 0px auto 0px 0px;
+        }
+    }
+
+}
