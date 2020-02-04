@@ -1,4 +1,4 @@
-css-framework
+# Simple CSS Framework
 
-It must be reusable
-It must be easy to avoid conflict with third party css. This will involve not having global styles.
+In order to avoid colliding with other css libraries we avoid global styles, putting them under 
+the `.simple` selector.

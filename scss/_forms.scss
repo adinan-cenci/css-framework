@@ -4,11 +4,11 @@
 #************************************/
 
 .simple-form {
+
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: flex-start;
-
 
     label {
         @extend %box-input-dimensions;
@@ -23,7 +23,6 @@
     label {
         margin-bottom: 10px;
     }
-
 }
 
 /*------------------------------*/

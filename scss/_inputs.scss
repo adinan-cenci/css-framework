@@ -220,6 +220,11 @@ $border: 1px;
         background-color: #e4e4e4;
     }
 
+    input[type=radio]:focus:after, 
+    input[type=checkbox]:focus:after {
+        box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+    }
+
     input[type=checkbox]:checked:after {
         content: '\2714';
     }
