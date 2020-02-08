@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
         <link rel="stylesheet" href="../css/master.css" />
-        <link rel="stylesheet" href="../css/firefox-fix.css" />
         <link rel="stylesheet" href="stylesheet.css" />
         <title>Document</title>
     </head>
@@ -19,7 +18,8 @@
                         <li><a href="tables.html">Tables</a></li>
                         <li><a href="blocks.html">Blocks</a></li>
                         <li><a href="inputs.html">Inputs</a></li>
-                        <li><a href="columns.html">Columns</a></li>
+                        <li><a href="flex.html">Flex</a></li>
+                        <li><a href="grids.html">Grids</a></li>
                         <li><a href="forms.html">Forms</a></li>
                         <li><a href="modal.html">Modal</a></li>
                     </ul>
@@ -29,19 +29,75 @@
             <div id="middle">
                 <div id="example-forms">
 
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            @
+                        </span>
+                        <input type="text" placeholder="Text" class="main">
+                        <input type="submit" class="button-main" value="Send">
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <input type="checkbox" value="1">
+                        </span>
+                        <input type="text" placeholder="Text" class="main">
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
                     <form action="" class="simple-form">
-                        <label class="col-sm-2">Name</label><input type="text" class="col-sm-10">
-                        <label class="col-sm-2">Date</label><input type="date" class="col-sm-10">
-                        <label class="col-sm-2">Select</label><select name="" class="col-sm-10">
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                            <option value="">Option 4</option>
-                            <option value="">Option 5</option>
-                        </select>
-                        <label>Name</label><input type="text" placeholder="xx">
-                        <label class="col-sm-2">Textarea:</label><textarea name="" id="" cols="30" rows="10" class="col-sm-10"></textarea>
-                        <button class="col-12">Submit</button>
+                        
+                        <div class="form-group grid">
+                            <label class="col-sm-2">Name</label><input type="text" class="col-sm-10">
+                        </div>
+
+                        <div class="form-group grid">
+                            <label class="col-sm-2">Date</label><input type="date" class="col-sm-10">
+                        </div>
+
+                        <div class="form-group grid">
+                            <label class="col-sm-2">Phone</label>
+                            <div class="input-group col-sm-10">
+                                <input type="text" placeholder="DDD" size="1" class="text-center">
+                                <input type="text" placeholder="Text" class="main">
+                            </div>
+                        </div>
+
+                        <div class="form-group grid">
+                            <label class="col-sm-2">Select</label><select name="" class="col-sm-10">
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                                <option value="">Option 4</option>
+                                <option value="">Option 5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group grid">
+                            <label class="col-sm-2" for="yes">Accept</label><div class="col-sm-10">
+                                <input type="radio" name="accept" value="0" id="no" /><label for="no">No</label>
+                                <input type="radio" name="accept" value="1" id="yes" /><label for="yes">Yes</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group grid">
+                            <label class="col-sm-2">Textarea:</label>
+                            <div class="col-sm-10">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <small>This is an observation</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group grid">
+                            <button class="col-12">Submit</button>
+                        </div>
                     </form>
 
 

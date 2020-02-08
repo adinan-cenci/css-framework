@@ -1,56 +1,90 @@
 
 /*************************************
-#*** SIMPLE FORM
+#*** FORMS
 #************************************/
 
-.simple-form {
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-start;
+.simple {
 
-    label {
+    .input-group-text {
         @extend %box-input-dimensions;
+        border: 1px solid #919191;
+        background-color: #e9ecef;
+
+        input[type='checkbox'], 
+        input[type='radio'] {
+            width: 1.5em;
+            height: 1.5em;
+        }
     }
+
+    .input-group {
+        @extend .flex;
+
+        .main {
+            flex-grow: 1;
+        }
+
+        input, 
+        select, 
+        button, 
+        .input-group-text {
+            min-width: 10px;
+            border-radius: 0px;
+            margin-left: -1px;
+        }
+
+        input:first-child, 
+        select:first-child, 
+        button:first-child, 
+        .input-group-text:first-child {
+            border-radius: 3px 0px 0px 3px;
+            margin-left: 0px;
+        }
+
+        input:last-child, 
+        select:last-child, 
+        button:last-child, 
+        .input-group-text:last-child {
+            border-radius: 0px 3px 3px 0px;
+        }
+    }
+
+}
+
+
+.simple {
     
+    .form-group {
+        margin-bottom: 20px;
 
-    label,
-    input,
-    textarea,
-    select,
-    button,
-    label {
-        margin-bottom: 10px;
-    }
-}
+        > label {
+            display: block;
+        }
 
-/*------------------------------*/
+        
+        > * {           
+            align-self: center;
+            min-width: 0px;
+        }
 
-.simple-form label:not([class^=col-]) {
-    @extend .col-2;
-}
+        
+        > input:not([type='checkbox']):not([type='radio']), 
+        > select, 
+        > textarea, 
+        > button {
+            min-width: 0px;
+            width: 100%;
+        }
 
-.simple-form input:not([class^=col-]),
-.simple-form textarea:not([class^=col-]),
-.simple-form select:not([class^=col-]),
-.simple-form button:not([class^=col-]) {
-    @extend .col-10;
-}
 
-/*------------------------------*/
-
-@media screen and (max-width: 768px) {
-
-    .simple-form label,
-    .simple-form input,
-    .simple-form textarea,
-    .simple-form select,
-    .simple-form button {
-        width: 100% !important;
-    }
-
-    .simple-form label {
-        margin-bottom: 0px;
+        > div:not(.input-group) {
+            > input:not([type='checkbox']):not([type='radio']), 
+            > textarea, 
+            > select, 
+            > button {
+                width: 100%;
+            }
+        }
     }
 }

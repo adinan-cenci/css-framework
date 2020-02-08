@@ -76,24 +76,46 @@
     }
 
     code, 
-    samp {
+    samp, 
+    pre {
         font-family: 'Source Code Pro', 'Courier'; /* monospace */
     }
 
+    code {
+        display: inline-block;
+        vertical-align: baseline;
+        padding: 0.125em 5px;
+        font-size: 0.75em;
+        line-height: 1em;
+        background-color: #e7e7e7;
+    }
+
     var {
-        
+        font-style: italic;
     }
 
-    sup {
-        
+    sup, sub 
+    {
+        font-size: 0.75em;
+        line-height: 1em;
     }
 
-    sub {
-        
+    sup {        
+        vertical-align: top;
+    }
+
+    sub {        
+        vertical-align: bottom;
     }
 
     time {
         
+    }
+
+    small {
+        vertical-align: baseline;
+        font-size: 0.75em;
+        line-height: 1.5;
     }
 
     /*************************************
