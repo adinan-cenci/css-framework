@@ -1,9 +1,14 @@
+
+label[for] {
+    cursor: pointer;
+}
+
 /*************************************
 #*** INPUTS
 #************************************/
 
 $padding: 10px;
-$border: 1px;
+$border:  1px;
 
 @function input-min-height($lines: 1)
 {
@@ -16,7 +21,7 @@ $border: 1px;
 #************************************/
 
 %box-input-dimensions {
-    display: inline-flex;
+    display: inline-block;
     height: input-min-height();
 
     padding: $padding;
@@ -51,9 +56,13 @@ $border: 1px;
     background-color: #f4f4f2;
 }
 
-%text-input-looks:focus {
+%text-input-focus {
     border: solid $border #51a7e8;
     box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+%text-input-looks:focus {
+    @extend %text-input-focus;
 }
 
 /*************************************
@@ -192,41 +201,27 @@ $border: 1px;
 
     input[type=radio], 
     input[type=checkbox] {
+        
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         cursor: pointer;
-        position: relative;
 
-        width: 25px;
-        height: input-min-height();
-    }
-
-    input[type=radio]:after,
-    input[type=checkbox]:after {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        left: 0px;        
-        top: 0px;
-        bottom: 0px;
-        width: 25px;
-        height: 25px;
+        width: 1.5em; /* line height */
+        height: 1.5em; /* line height */
         border: solid $border #a1a1a1;
         border-radius: 3px;
-        margin: auto;
-
         text-align: center;
         line-height: 23px;
-        color: #2e3436;
         content: '';
+        color: #2e3436;
+
         background-color: #e4e4e4;
     }
 
-    input[type=radio]:focus:after, 
-    input[type=checkbox]:focus:after {
-        border: solid $border #51a7e8;
-        box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+    input[type=radio]:focus, 
+    input[type=checkbox]:focus {
+        @extend %text-input-focus;
     }
 
     input[type=checkbox]:checked:after {
@@ -235,14 +230,48 @@ $border: 1px;
 
     /* radio */
 
-    input[type=radio]:after {
+    input[type=radio] {
         border-radius: 50px;
-        font-size: 55px;
     }
 
-    input[type=radio]:checked:after {
+    input[type=radio]:checked {
         background: radial-gradient(#2e3436 0%, #2e3436 25%, #e4e4e4 30%);
     }
+
+    
+    //----------------------
+
+    .checkbox {
+        display: inline-block;
+        position: relative;
+        
+        input {
+            position: absolute;
+            z-index: 3;
+            left: 11px;
+            top: 11px;
+
+            height: 24px;
+        }
+
+        .label {
+            @extend %box-input-dimensions;
+            position: relative;            
+            z-index: 2;
+            cursor: pointer;
+            padding-left: 45px;
+            border-color: #b9bcb5;
+            border-radius: 3px;
+            background-color: #f2f2f2;
+        }
+
+        input:checked + .label {
+            color: #fff;
+            background-color: #065896;
+        }
+    }
+    
+
 
     /*************************************
     #*** Selectors: PROGRESS BAR

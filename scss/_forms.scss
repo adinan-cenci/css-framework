@@ -1,8 +1,7 @@
 
 /*************************************
-#*** FORMS
+#*** INPUT GROUP
 #************************************/
-
 
 .simple {
 
@@ -25,37 +24,41 @@
             flex-grow: 1;
         }
 
-        input, 
-        select, 
-        button, 
-        .input-group-text {
+        > input, 
+        > select, 
+        > button, 
+        > .input-group-text {
             min-width: 10px;
             border-radius: 0px;
             margin-left: -1px;
         }
 
-        input:first-child, 
-        select:first-child, 
-        button:first-child, 
-        .input-group-text:first-child {
+        > input:first-child, 
+        > select:first-child, 
+        > button:first-child, 
+        > .input-group-text:first-child {
             border-radius: 3px 0px 0px 3px;
             margin-left: 0px;
         }
 
-        input:last-child, 
-        select:last-child, 
-        button:last-child, 
-        .input-group-text:last-child {
+        > input:last-child, 
+        > select:last-child, 
+        > button:last-child, 
+        > .input-group-text:last-child {
             border-radius: 0px 3px 3px 0px;
         }
     }
 
 }
 
+/*************************************
+#*** FORM GROUP
+#************************************/
 
 .simple {
     
     .form-group {
+        
         margin-bottom: 20px;
 
         > label {
@@ -86,5 +89,33 @@
                 width: 100%;
             }
         }
+    }
+}
+
+
+
+/*************************************
+#*** HORIZONTAL FORMS
+#************************************/
+
+.simple {
+    
+    .horizontal .form-group, 
+    .form-group.horizontal {
+        @extend .grid;
+    }
+}
+
+/*************************************
+#*** VERTICAL FORMS
+#************************************/
+
+.simple {
+    
+    .vertical .form-group, 
+    .form-group.vertical {
+
+       
+
     }
 }
