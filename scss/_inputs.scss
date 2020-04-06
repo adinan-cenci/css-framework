@@ -129,6 +129,22 @@ $border:  1px;
     background-color: #df1313;
 }
 
+/*-----------*/
+
+%button-input-looks.button-positive {
+    border-color: #376c04;
+    color: #fff;
+    background-color: #4e9a06;
+}
+
+%button-input-looks.button-positive:hover {
+    color: #fff;
+}
+
+%button-input-looks.button-positive:active {
+    background-color: #408102;
+}
+
 .simple {
     /*************************************
     #*** Selectors: Input text
@@ -267,7 +283,7 @@ $border:  1px;
 
         input:checked + .label {
             color: #fff;
-            background-color: #065896;
+            background-color: #3465a4;
         }
     }
     

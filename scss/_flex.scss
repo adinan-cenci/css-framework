@@ -9,4 +9,13 @@
         align-items: stretch;
         justify-content: flex-start;
     }
+
+    .flexy {
+    	@extend .flex;
+    	justify-content: space-between;
+
+    	> * {
+    		margin: 0px;
+    	}
+    }
 }

@@ -103,6 +103,7 @@
     .horizontal .form-group, 
     .form-group.horizontal {
         @extend .grid;
+        grid-row-gap: 0px;
     }
 }
 
