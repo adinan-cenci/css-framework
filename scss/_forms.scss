@@ -7,7 +7,12 @@
 
     .input-group-text {
         @extend %box-input-dimensions;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: input-min-height();
         border: 1px solid #919191;
+        text-align: center;
         background-color: #e9ecef;
 
         input[type='checkbox'], 
@@ -25,15 +30,17 @@
         }
 
         > input, 
+        > textarea, 
         > select, 
         > button, 
         > .input-group-text {
-            min-width: 10px;
+            height: auto;
             border-radius: 0px;
             margin-left: -1px;
         }
 
         > input:first-child, 
+        > textarea:first-child, 
         > select:first-child, 
         > button:first-child, 
         > .input-group-text:first-child {
@@ -42,6 +49,7 @@
         }
 
         > input:last-child, 
+        > textarea:last-child, 
         > select:last-child, 
         > button:last-child, 
         > .input-group-text:last-child {

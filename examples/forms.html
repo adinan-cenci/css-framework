@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
         <link rel="stylesheet" href="../css/master.css" />
-        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="_stylesheet.css" />
         <title>Document</title>
     </head>
     <body>
@@ -17,9 +17,9 @@
                         <li><a href="lists.html">Lists</a></li>
                         <li><a href="tables.html">Tables</a></li>
                         <li><a href="blocks.html">Blocks</a></li>
-                        <li><a href="inputs.html">Inputs</a></li>
                         <li><a href="flex.html">Flex</a></li>
                         <li><a href="grids.html">Grids</a></li>
+                        <li><a href="inputs.html">Inputs</a></li>
                         <li><a href="forms.html">Forms</a></li>
                         <li><a href="modal.html">Modal</a></li>
                     </ul>
@@ -33,9 +33,29 @@
 
                     <div class="input-group">
                         <span class="input-group-text">
+                            Write here
+                        </span>
+                        <textarea placeholder="Text area" class="main"></textarea>
+                        <input type="submit" class="button-main" value="Send">
+                    </div>
+
+                    <br>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
                             @
                         </span>
                         <input type="text" placeholder="Text" class="main">
+                        <input type="submit" class="button-main" value="Send">
+                    </div>
+
+                    <br>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            File here
+                        </span>
+                        <input type="file" class="main">
                         <input type="submit" class="button-main" value="Send">
                     </div>
 
@@ -59,26 +79,36 @@
 
                     <form action="" class="horizontal">
                         
-                        <div class="form-group">
-                            <label class="col-sm-2">Name</label>
+                        <label class="form-group">
+                            <span class="label col-sm-2">Name</span>
                             <input type="text" class="col-sm-10">
-                        </div>
+                        </label>
 
-                        <div class="form-group">
-                            <label class="col-sm-2">Date</label>
+                        <label class="form-group">
+                            <span class="label col-sm-2">Date</span>
                             <input type="date" class="col-sm-10">
-                        </div>
+                        </label>
 
                         <div class="form-group">
                             <label class="col-sm-2">Phone</label>
                             <div class="input-group col-sm-10">
-                                <input type="text" placeholder="DDD" size="3" class="text-center">
+                                <input type="text" placeholder="DDD" size="4" class="text-center">
                                 <input type="text" placeholder="Text" class="main">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label class="col-sm-2">Select</label>
+                        <label class="form-group">
+                            <span class="label col-sm-2">Twitter handle</span>
+                            <div class="input-group col-sm-10">
+                                <span class="input-group-text">
+                                    @
+                                </span>
+                                <input type="text" placeholder="Text" class="main">
+                            </div>
+                        </label>
+
+                        <label class="form-group">
+                            <span class="label col-sm-2">Select</span>
                             <select name="" class="col-sm-10">
                                 <option value="">Option 1</option>
                                 <option value="">Option 2</option>
@@ -86,26 +116,27 @@
                                 <option value="">Option 4</option>
                                 <option value="">Option 5</option>
                             </select>
-                        </div>
+                        </label>
 
                         <div class="form-group">
-                            <label class="col-sm-2" for="yes">Accept</label><div class="col-sm-10">
-                                <input type="radio" name="accept" value="0" id="no" />
-                                <label for="no">No</label>
-
+                            <label class="col-sm-2" for="yes">Accept</label>
+                            <div class="col-sm-10">
                                 <input type="radio" name="accept" value="1" id="yes" />
                                 <label for="yes">Yes</label>
+
+                                <input type="radio" name="accept" value="0" id="no" />
+                                <label for="no">No</label>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-2" for="yes">Accept</label><div class="col-sm-10">
                                 <label class="checkbox">
-                                    <input type="radio" name="accept2" value="0" /><span class="label">No</span>
+                                    <input type="radio" name="accept2" value="1" /><span class="label">Yes</span>
                                 </label>
 
                                 <label class="checkbox">
-                                    <input type="radio" name="accept2" value="1" /><span class="label">Yes</span>
+                                    <input type="radio" name="accept2" value="0" /><span class="label">No</span>
                                 </label>
                             </div>
                         </div>
@@ -145,7 +176,17 @@
                         <div class="form-group">
                             <label class="col-sm-2">Phone</label>
                             <div class="input-group col-sm-10">
-                                <input type="text" placeholder="DDD" size="3" class="text-center">
+                                <input type="text" placeholder="DDD" size="4" class="text-center">
+                                <input type="text" placeholder="Text" class="main">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2">Twitter handle</label>
+                            <div class="input-group col-sm-10">
+                                <span class="input-group-text">
+                                    @
+                                </span>
                                 <input type="text" placeholder="Text" class="main">
                             </div>
                         </div>

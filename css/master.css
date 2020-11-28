@@ -182,7 +182,6 @@ label[for] {
 .simple input[type=search],
 .simple input[type=file],
 .simple input[type=color] {
-  min-width: 215px;
   border: solid 1px #919191;
   border-radius: 3px;
   color: #555;
@@ -401,6 +400,20 @@ label[for] {
   #*** CHECKS AND RADIOS BUTTONS
   #************************************/
   /* radio */
+  /*************************************
+  #*** Selectors: INPUT FILE
+  #************************************/
+  /*input[type=file] {
+      appearance: textfield;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      cursor: pointer;
+  }
+
+  input[type=file]::file-selector-button, 
+  input[type=file]::-webkit-file-upload-button {
+
+  }*/
   /*************************************
   #*** Selectors: PROGRESS BAR
   #************************************/
@@ -978,7 +991,12 @@ label[for] {
 #*** INPUT GROUP
 #************************************/
 .simple .input-group-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
   border: 1px solid #919191;
+  text-align: center;
   background-color: #e9ecef;
 }
 .simple .input-group-text input[type=checkbox],
@@ -990,14 +1008,16 @@ label[for] {
   flex-grow: 1;
 }
 .simple .input-group > input,
+.simple .input-group > textarea,
 .simple .input-group > select,
 .simple .input-group > button,
 .simple .input-group > .input-group-text {
-  min-width: 10px;
+  height: auto;
   border-radius: 0px;
   margin-left: -1px;
 }
 .simple .input-group > input:first-child,
+.simple .input-group > textarea:first-child,
 .simple .input-group > select:first-child,
 .simple .input-group > button:first-child,
 .simple .input-group > .input-group-text:first-child {
@@ -1005,6 +1025,7 @@ label[for] {
   margin-left: 0px;
 }
 .simple .input-group > input:last-child,
+.simple .input-group > textarea:last-child,
 .simple .input-group > select:last-child,
 .simple .input-group > button:last-child,
 .simple .input-group > .input-group-text:last-child {

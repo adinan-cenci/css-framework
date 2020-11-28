@@ -38,7 +38,6 @@ $border:  1px;
 #************************************/
 
 %text-input-looks {
-    min-width: 215px;
     border: solid $border #919191;
     border-radius: 3px;
     color: #555;
@@ -286,8 +285,22 @@ $border:  1px;
             background-color: #3465a4;
         }
     }
-    
 
+    /*************************************
+    #*** Selectors: INPUT FILE
+    #************************************/
+
+    /*input[type=file] {
+        appearance: textfield;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        cursor: pointer;
+    }
+
+    input[type=file]::file-selector-button, 
+    input[type=file]::-webkit-file-upload-button {
+        
+    }*/
 
     /*************************************
     #*** Selectors: PROGRESS BAR
