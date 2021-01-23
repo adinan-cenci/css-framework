@@ -12,8 +12,14 @@ $border:  1px;
 
 @function input-min-height($lines: 1)
 {
-    // 18px * lines + (10px padding * 2) + (1px border * 2)
+    // 24px * lines + (10px padding * 2) + (1px border * 2)
     @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding * 2 ) + ( $border * 2 ) );
+}
+
+@function small-input-min-height($lines: 1)
+{
+    // 24px * lines + (5px padding * 2) + (1px border * 2)
+    @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding ) + ( $border * 2 ) );
 }
 
 /*************************************
@@ -29,8 +35,11 @@ $border:  1px;
 
     font-size: $base-font-size;
     line-height: $base-font-size * $line-height-ratio;
+}
 
-    background-color: #fff;
+%box-input-dimensions.small {
+    padding: $padding / 2;
+    height: small-input-min-height();
 }
 
 /*************************************
@@ -46,6 +55,7 @@ $border:  1px;
 
 %text-input-looks::-webkit-input-placeholder {
     color: #8d8f8a;
+    background-color: #fff;
 }
 
 %text-input-looks[disabled] {
@@ -67,6 +77,17 @@ $border:  1px;
 /*************************************
 #*** BUTTONS
 #************************************/
+
+%button-input-dimensions {
+    @extend %box-input-dimensions;
+    height: auto;
+    min-height: input-min-height();
+}
+
+%button-input-dimensions.small {
+    height: auto;
+    min-height: small-input-min-height();
+}
 
 %button-input-looks {
     min-width: input-min-height();
@@ -98,49 +119,49 @@ $border:  1px;
 
 /*-----------*/
 
-%button-input-looks.button-main {
+%button-input-looks.btn-main {
     border-color: #1c5288;
     color: #fff;
     background-color: #4a90d9;
 }
 
-%button-input-looks.button-main:hover {
+%button-input-looks.btn-main:hover {
     color: #fff;
 }
 
-%button-input-looks.button-main:active {
+%button-input-looks.btn-main:active {
     background-color: #3b81ca;
 }
 
 /*-----------*/
 
-%button-input-looks.button-danger {
+%button-input-looks.btn-danger {
     border-color: #910f0f;
     color: #fff;
     background-color: #ee2222;
 }
 
-%button-input-looks.button-danger:hover {
+%button-input-looks.btn-danger:hover {
     color: #fff;
 }
 
-%button-input-looks.button-danger:active {
+%button-input-looks.btn-danger:active {
     background-color: #df1313;
 }
 
 /*-----------*/
 
-%button-input-looks.button-positive {
+%button-input-looks.btn-positive {
     border-color: #376c04;
     color: #fff;
     background-color: #4e9a06;
 }
 
-%button-input-looks.button-positive:hover {
+%button-input-looks.btn-positive:hover {
     color: #fff;
 }
 
-%button-input-looks.button-positive:active {
+%button-input-looks.btn-positive:active {
     background-color: #408102;
 }
 
@@ -183,7 +204,7 @@ $border:  1px;
     input[type=button],
     input[type=reset],
     .btn {
-        @extend %box-input-dimensions;
+        @extend %button-input-dimensions;
         @extend %button-input-looks;
     }
 

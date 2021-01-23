@@ -55,6 +55,10 @@ body {
         text-align: left;
     }
 
+    #example-inputs td[colspan] {
+        text-align: center;
+    }
+
     #example-inputs th {
         text-align: center;
     }

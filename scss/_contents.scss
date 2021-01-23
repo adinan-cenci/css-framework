@@ -1,0 +1,42 @@
+.simple {
+    
+    .tabs {
+        @extend .flex;
+        z-index: 10;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .tab {
+        display: block;
+        border-radius: 5px 5px 0px 0px;
+        border: solid 1px #919191;
+        margin: 0px 5px 0px 0px;
+        background-color: #eee;
+
+        a {
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+
+    .tab.active {
+        background-color: white;
+
+        border-bottom: white;
+    }
+
+    .panel {
+        display: none;
+        z-index: 9;
+        padding: 20px;
+        border: solid 1px #919191;
+        margin-top: -1px;
+        background-color: white;
+    }
+
+    .panel.active {
+        display: block;
+    }
+}

@@ -134,11 +134,7 @@ label[for] {
 /*************************************
 #*** DIMENSIONS
 #************************************/
-.simple .input-group-text, .simple .checkbox .label, .simple button,
-.simple input[type=submit],
-.simple input[type=button],
-.simple input[type=reset],
-.simple .btn, .simple textarea,
+.simple .input-group-text, .simple .checkbox .label, .simple textarea,
 .simple select,
 .simple input[type=text],
 .simple input[type=password],
@@ -153,14 +149,41 @@ label[for] {
 .simple input[type=number],
 .simple input[type=search],
 .simple input[type=file],
-.simple input[type=color] {
+.simple input[type=color], .simple button,
+.simple input[type=submit],
+.simple input[type=button],
+.simple input[type=reset],
+.simple .btn {
   display: inline-block;
   height: 46px;
   padding: 10px;
   border: solid 1px transparent;
   font-size: 16px;
   line-height: 24px;
-  background-color: #fff;
+}
+
+.simple .small.input-group-text, .simple .checkbox .small.label, .simple textarea.small,
+.simple select.small,
+.simple input.small[type=text],
+.simple input.small[type=password],
+.simple input.small[type=url],
+.simple input.small[type=email],
+.simple input.small[type=tel],
+.simple input.small[type=date],
+.simple input.small[type=datetime-local],
+.simple input.small[type=month],
+.simple input.small[type=week],
+.simple input.small[type=time],
+.simple input.small[type=number],
+.simple input.small[type=search],
+.simple input.small[type=file],
+.simple input.small[type=color], .simple button.small,
+.simple input.small[type=submit],
+.simple input.small[type=button],
+.simple input.small[type=reset],
+.simple .small.btn {
+  padding: 5px;
+  height: 36px;
 }
 
 /*************************************
@@ -205,6 +228,7 @@ label[for] {
 .simple input[type=file]::-webkit-input-placeholder,
 .simple input[type=color]::-webkit-input-placeholder {
   color: #8d8f8a;
+  background-color: #fff;
 }
 
 .simple textarea[disabled],
@@ -258,6 +282,24 @@ label[for] {
 .simple input[type=button],
 .simple input[type=reset],
 .simple .btn {
+  height: auto;
+  min-height: 46px;
+}
+
+.simple button.small,
+.simple input.small[type=submit],
+.simple input.small[type=button],
+.simple input.small[type=reset],
+.simple .small.btn {
+  height: auto;
+  min-height: 36px;
+}
+
+.simple button,
+.simple input[type=submit],
+.simple input[type=button],
+.simple input[type=reset],
+.simple .btn {
   min-width: 46px;
   cursor: pointer;
   border: solid 1px #a7a7a7;
@@ -303,83 +345,83 @@ label[for] {
 }
 
 /*-----------*/
-.simple button.button-main,
-.simple input.button-main[type=submit],
-.simple input.button-main[type=button],
-.simple input.button-main[type=reset],
-.simple .button-main.btn {
+.simple button.btn-main,
+.simple input.btn-main[type=submit],
+.simple input.btn-main[type=button],
+.simple input.btn-main[type=reset],
+.simple .btn-main.btn {
   border-color: #1c5288;
   color: #fff;
   background-color: #4a90d9;
 }
 
-.simple button.button-main:hover,
-.simple input.button-main[type=submit]:hover,
-.simple input.button-main[type=button]:hover,
-.simple input.button-main[type=reset]:hover,
-.simple .button-main.btn:hover {
+.simple button.btn-main:hover,
+.simple input.btn-main[type=submit]:hover,
+.simple input.btn-main[type=button]:hover,
+.simple input.btn-main[type=reset]:hover,
+.simple .btn-main.btn:hover {
   color: #fff;
 }
 
-.simple button.button-main:active,
-.simple input.button-main[type=submit]:active,
-.simple input.button-main[type=button]:active,
-.simple input.button-main[type=reset]:active,
-.simple .button-main.btn:active {
+.simple button.btn-main:active,
+.simple input.btn-main[type=submit]:active,
+.simple input.btn-main[type=button]:active,
+.simple input.btn-main[type=reset]:active,
+.simple .btn-main.btn:active {
   background-color: #3b81ca;
 }
 
 /*-----------*/
-.simple button.button-danger,
-.simple input.button-danger[type=submit],
-.simple input.button-danger[type=button],
-.simple input.button-danger[type=reset],
-.simple .button-danger.btn {
+.simple button.btn-danger,
+.simple input.btn-danger[type=submit],
+.simple input.btn-danger[type=button],
+.simple input.btn-danger[type=reset],
+.simple .btn-danger.btn {
   border-color: #910f0f;
   color: #fff;
   background-color: #ee2222;
 }
 
-.simple button.button-danger:hover,
-.simple input.button-danger[type=submit]:hover,
-.simple input.button-danger[type=button]:hover,
-.simple input.button-danger[type=reset]:hover,
-.simple .button-danger.btn:hover {
+.simple button.btn-danger:hover,
+.simple input.btn-danger[type=submit]:hover,
+.simple input.btn-danger[type=button]:hover,
+.simple input.btn-danger[type=reset]:hover,
+.simple .btn-danger.btn:hover {
   color: #fff;
 }
 
-.simple button.button-danger:active,
-.simple input.button-danger[type=submit]:active,
-.simple input.button-danger[type=button]:active,
-.simple input.button-danger[type=reset]:active,
-.simple .button-danger.btn:active {
+.simple button.btn-danger:active,
+.simple input.btn-danger[type=submit]:active,
+.simple input.btn-danger[type=button]:active,
+.simple input.btn-danger[type=reset]:active,
+.simple .btn-danger.btn:active {
   background-color: #df1313;
 }
 
 /*-----------*/
-.simple button.button-positive,
-.simple input.button-positive[type=submit],
-.simple input.button-positive[type=button],
-.simple input.button-positive[type=reset],
-.simple .button-positive.btn {
+.simple button.btn-positive,
+.simple input.btn-positive[type=submit],
+.simple input.btn-positive[type=button],
+.simple input.btn-positive[type=reset],
+.simple .btn-positive.btn {
   border-color: #376c04;
   color: #fff;
   background-color: #4e9a06;
 }
 
-.simple button.button-positive:hover,
-.simple input.button-positive[type=submit]:hover,
-.simple input.button-positive[type=button]:hover,
-.simple input.button-positive[type=reset]:hover,
-.simple .button-positive.btn:hover {
+.simple button.btn-positive:hover,
+.simple input.btn-positive[type=submit]:hover,
+.simple input.btn-positive[type=button]:hover,
+.simple input.btn-positive[type=reset]:hover,
+.simple .btn-positive.btn:hover {
   color: #fff;
 }
 
-.simple button.button-positive:active,
-.simple input.button-positive[type=submit]:active,
-.simple input.button-positive[type=button]:active,
-.simple input.button-positive[type=reset]:active,
-.simple .button-positive.btn:active {
+.simple button.btn-positive:active,
+.simple input.btn-positive[type=submit]:active,
+.simple input.btn-positive[type=button]:active,
+.simple input.btn-positive[type=reset]:active,
+.simple .btn-positive.btn:active {
   background-color: #408102;
 }
 
@@ -644,7 +686,7 @@ label[for] {
   #*** flex
   #************************************/
 }
-.simple .flex, .simple .input-group, .simple .flexy {
+.simple .flex, .simple .tabs, .simple .input-group, .simple .flexy {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -1070,5 +1112,37 @@ label[for] {
 /*************************************
 #*** VERTICAL FORMS
 #************************************/
+.simple .tabs {
+  z-index: 10;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.simple .tab {
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+  border: solid 1px #919191;
+  margin: 0px 5px 0px 0px;
+  background-color: #eee;
+}
+.simple .tab a {
+  display: block;
+  padding: 10px 20px;
+}
+.simple .tab.active {
+  background-color: white;
+  border-bottom: white;
+}
+.simple .panel {
+  display: none;
+  z-index: 9;
+  padding: 20px;
+  border: solid 1px #919191;
+  margin-top: -1px;
+  background-color: white;
+}
+.simple .panel.active {
+  display: block;
+}
 
 /*# sourceMappingURL=master.css.map */

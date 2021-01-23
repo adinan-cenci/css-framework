@@ -11,11 +11,11 @@
     }
 
     .flexy {
-    	@extend .flex;
-    	justify-content: space-between;
+        @extend .flex;
+        justify-content: space-between;
 
-    	> * {
-    		margin: 0px;
-    	}
+        > * {
+            margin: 0px;
+        }
     }
 }
