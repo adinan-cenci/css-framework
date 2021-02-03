@@ -228,7 +228,6 @@ label[for] {
 .simple input[type=file]::-webkit-input-placeholder,
 .simple input[type=color]::-webkit-input-placeholder {
   color: #8d8f8a;
-  background-color: #fff;
 }
 
 .simple textarea[disabled],
