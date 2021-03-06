@@ -182,7 +182,7 @@ label[for] {
 .simple input.small[type=button],
 .simple input.small[type=reset],
 .simple .small.btn {
-  padding: 5px;
+  padding: 5px 10px;
   height: 36px;
 }
 
@@ -1006,7 +1006,7 @@ label[for] {
 /*************************************
 #*** OVERLAY
 #************************************/
-.overlay {
+.overlay, .modal {
   pointer-events: none;
   position: fixed;
   top: 0px;
@@ -1016,16 +1016,56 @@ label[for] {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.modal {
-  pointer-events: auto;
+.overlay.close, .close.modal {
+  display: none;
 }
 
-.modal.scroll {
+/*************************************
+#*** MODAL
+#************************************/
+.modal {
+  display: flex;
+  pointer-events: auto;
   overflow-y: auto;
 }
 
-.modal .content {
+.modal.closed {
+  display: none;
+}
+
+.modal .modal-dialog {
+  transform: translate(0, 0);
   pointer-events: auto;
+  padding: 20px 0px;
+  margin: auto;
+}
+
+.modal .modal-content {
+  width: 500px;
+  max-width: calc(100% - 40px);
+  border: solid 1px #919191;
+  border-radius: 3px;
+  background: white;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+  padding: 10px 20px;
+}
+
+.modal .modal-header {
+  border-radius: 3px 3px 0px 0px;
+}
+
+.modal * + .modal-body,
+.modal * + .modal-footer {
+  border-top: solid 1px #919191;
+}
+
+.modal-body:last-child,
+.modal-footer:last-child {
+  border-radius: 0px 0px 3px 30px;
 }
 
 /*************************************
