@@ -124,7 +124,7 @@ body {
   background-color: #EDECFE;
 }
 
-label[for] {
+math.div in sass label[for] {
   cursor: pointer;
 }
 
@@ -685,7 +685,7 @@ label[for] {
   #*** flex
   #************************************/
 }
-.simple .flex, .simple .tabs, .simple .input-group, .simple .flexy {
+.simple .flex, .simple .tabs, .simple .button-group, .simple .input-group, .simple .flexy {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -1093,6 +1093,7 @@ label[for] {
 .simple .input-group > textarea,
 .simple .input-group > select,
 .simple .input-group > button,
+.simple .input-group > .btn,
 .simple .input-group > .input-group-text {
   height: auto;
   border-radius: 0px;
@@ -1102,6 +1103,7 @@ label[for] {
 .simple .input-group > textarea:first-child,
 .simple .input-group > select:first-child,
 .simple .input-group > button:first-child,
+.simple .input-group > .btn:first-child,
 .simple .input-group > .input-group-text:first-child {
   border-radius: 3px 0px 0px 3px;
   margin-left: 0px;
@@ -1110,7 +1112,34 @@ label[for] {
 .simple .input-group > textarea:last-child,
 .simple .input-group > select:last-child,
 .simple .input-group > button:last-child,
+.simple .input-group > .btn:last-child,
 .simple .input-group > .input-group-text:last-child {
+  border-radius: 0px 3px 3px 0px;
+}
+
+/*************************************
+#*** FORM GROUP
+#************************************/
+.simple .button-group {
+  display: inline-flex;
+  width: auto;
+}
+.simple .button-group > input,
+.simple .button-group > button,
+.simple .button-group > .btn {
+  height: auto;
+  border-radius: 0px;
+  margin-left: -1px;
+}
+.simple .button-group > input:first-child,
+.simple .button-group > button:first-child,
+.simple .button-group > .btn:first-child {
+  border-radius: 3px 0px 0px 3px;
+  margin-left: 0px;
+}
+.simple .button-group > input:last-child,
+.simple .button-group > button:last-child,
+.simple .button-group > .btn:last-child {
   border-radius: 0px 3px 3px 0px;
 }
 

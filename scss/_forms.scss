@@ -32,7 +32,8 @@
         > input, 
         > textarea, 
         > select, 
-        > button, 
+        > button,
+        > .btn, 
         > .input-group-text {
             height: auto;
             border-radius: 0px;
@@ -43,6 +44,7 @@
         > textarea:first-child, 
         > select:first-child, 
         > button:first-child, 
+        > .btn:first-child, 
         > .input-group-text:first-child {
             border-radius: 3px 0px 0px 3px;
             margin-left: 0px;
@@ -52,11 +54,44 @@
         > textarea:last-child, 
         > select:last-child, 
         > button:last-child, 
+        > .btn:last-child, 
         > .input-group-text:last-child {
             border-radius: 0px 3px 3px 0px;
         }
     }
+}
 
+/*************************************
+#*** FORM GROUP
+#************************************/
+
+.simple {
+    .button-group {
+        @extend .flex;
+        display: inline-flex;
+        width: auto;
+
+        > input, 
+        > button,
+        > .btn {
+            height: auto;
+            border-radius: 0px;
+            margin-left: -1px;
+        }
+
+        > input:first-child,  
+        > button:first-child, 
+        > .btn:first-child {
+            border-radius: 3px 0px 0px 3px;
+            margin-left: 0px;
+        }
+
+        > input:last-child, 
+        > button:last-child, 
+        > .btn:last-child {
+            border-radius: 0px 3px 3px 0px;
+        }
+    }
 }
 
 /*************************************

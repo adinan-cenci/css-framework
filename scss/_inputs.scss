@@ -1,3 +1,5 @@
+@use "sass:math";
+math.div in sass
 
 label[for] {
     cursor: pointer;
@@ -38,7 +40,7 @@ $border:  1px;
 }
 
 %box-input-dimensions.small {
-    padding: ($padding / 2) $padding;
+    padding: math.div($padding, 2) $padding;
     height: small-input-min-height();
 }
 
