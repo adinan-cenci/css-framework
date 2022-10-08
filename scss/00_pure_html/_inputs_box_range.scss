@@ -1,0 +1,9 @@
+/*************************************
+#*** RANGE INPUT
+#************************************/
+
+.simple {
+    input[type=range] {
+        height: box-input-min-height(1);
+    }
+}

@@ -40,13 +40,9 @@
 
             <div id="middle">
 
-                <div style="text-align: center;">
-                    <span style="display: inline-block;">Regular text</span> <input type="text" name="name" value="Something" /> <button>Some button</button>
-                </div>
-
-                <table id="example-inputs">
+                <table class="example-inputs">
                     <tr>
-                        <th colspan="2">Text</th>
+                        <th colspan="2">BOX INPUT:<br>Text input</th>
                     </tr>
                     <tr>
                         <td>Label</td>
@@ -106,10 +102,6 @@
                     </tr>
 
                     <tr>
-                        <th colspan="2">Date and time</th>
-                    </tr>
-
-                    <tr>
                         <td>Date:</td>
                         <td><input type="date" value="2019-01-01"></td>
                     </tr>
@@ -132,10 +124,16 @@
                     <tr>
                         <td>Time:</td>
                         <td><input type="time"></td>
-                    </tr>                
+                    </tr>
 
                     <tr>
-                        <th colspan="2">Select</th>
+                        <td>File</td>
+                        <td><input type="file"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Color:</td>
+                        <td><input type="color"></td>
                     </tr>
 
                     <tr>
@@ -174,22 +172,8 @@
                     </tr>
 
                     <tr>
-                        <th colspan="2">Radio / checkbox</th>
+                        <th colspan="2">BOX INPUT:<br>Buttons</th>
                     </tr>
-
-                    <tr>
-                        <td>Input Radio</td>
-                        <td><input type="radio" name="radio" value="a"/> <input type="radio" name="radio" value="b"/></td>
-                    </tr>
-                    <tr>
-                        <td>Input Checkbox</td>
-                        <td><input type="checkbox" name="check" /> <input type="checkbox" name="check2" /></td>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Buttons</th>
-                    </tr>
-
                     <tr>
                         <td>
                             Button
@@ -226,41 +210,26 @@
                             <input type="reset" value=":disabled" disabled/>
                         </td>
                     </tr>
+
+                    <tr>
+                        <th colspan="2">INLINE INPUTS:<br>Radio / checkbox</th>
+                    </tr>
+
+                    <tr>
+                        <td>Input Radio</td>
+                        <td><input type="radio" name="radio" value="a"/> <input type="radio" name="radio" value="b"/></td>
+                    </tr>
+                    <tr>
+                        <td>Input Checkbox</td>
+                        <td><input type="checkbox" name="check" /> <input type="checkbox" name="check2" /></td>
+                    </tr>
+
                     <tr>
                         <th colspan="2">Others</th>
                     </tr>
-
                     <tr>
                         <td>Range:</td>
                         <td><input type="range" min="0" max="5"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Color:</td>
-                        <td><input type="color"></td>
-                    </tr>              
-                    <tr>
-                        <td>File</td>
-                        <td><input type="file"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Progress bar</td>
-                        <td><progress value="75" max="100"></progress></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">
-                            <fieldset>
-                                <legend>Contact</legend>
-                                <p>Your contact info here...</p>
-                            </fieldset>
-
-                            <fieldset>
-                                <legend>Something something</legend>
-                                <p>Lorem ipsum dolor sit amet...</p>
-                            </fieldset>
-                        </td>
                     </tr>
                 </table>
                 

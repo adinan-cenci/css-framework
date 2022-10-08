@@ -1,0 +1,53 @@
+/*************************************
+#*** INLINE INPUTS DIMENSIONS
+#************************************/
+$inline-input-height: $input-line-height;
+
+
+/*************************************
+#*** SELECTORS
+#************************************/
+.simple {
+
+    input[type=radio], 
+    input[type=checkbox] {        
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+
+        width: $input-line-height;
+        height: $input-line-height;
+        border: solid $border #a1a1a1;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 23px;
+        content: '';
+        color: #2e3436;
+
+        background-color: #e4e4e4;
+    }
+
+    input[type=radio]:focus, 
+    input[type=checkbox]:focus {
+        @extend %input-focus;
+    }
+
+    /*************************************
+    #*** CHECKBOX
+    #************************************/
+    input[type=checkbox]:checked:after {
+        content: '\2714';
+    }
+
+    /*************************************
+    #*** RADIO
+    #************************************/
+    input[type=radio] {
+        border-radius: 50px;
+    }
+
+    input[type=radio]:checked {
+        background: radial-gradient(#2e3436 0%, #2e3436 25%, #e4e4e4 30%);
+    }
+}

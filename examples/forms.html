@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
-        <link rel="stylesheet" href="../css/master.css" />
+        <link rel="stylesheet" href="../dist/everything.css" />
         <link rel="stylesheet" href="_stylesheet.css" />
         <title>Document</title>
     </head>
@@ -41,6 +41,33 @@
 
             <div id="middle">
                 <div id="example-forms">
+
+                    <table class="example-inputs">
+                        <tr>
+                            <td>Labeled</td>
+                            <td>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="input" value="1" />I agree to the <a>terms of use</a>.
+                                </label>
+                                <br><br>
+                                <label class="checkbox">
+                                    <input type="radio" name="input_radio" value="1" />I agree to the <a>terms of use</a>.
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Normal
+                            </td>
+                            <td>
+                                <button>Regular</button>
+                                <button disabled>:disabled</button>
+                                <button class="btn-main">.btn-main</button>
+                                <button class="btn-danger">.btn-danger</button>
+                                <button class="btn-positive">.btn-positive</button>
+                            </td>
+                        </tr>
+                    </table>
 
                     <h2>Input groups</h2>
 

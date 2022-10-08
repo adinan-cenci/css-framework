@@ -1,0 +1,21 @@
+/*************************************
+#*** BOX INPUTS DIMENSIONS
+#************************************/
+$padding-v: 6px;
+$padding-h: 12px;
+
+@function box-input-min-height($lines: 1)
+{
+    @return ceil( $input-line-height * $lines + $padding-v * 2 + $border * 2 ); // 38px
+}
+
+%box-input-dimensions {
+    display: inline-block;
+    height: box-input-min-height();
+
+    padding: $padding-v $padding-h;
+    border: solid $border transparent;
+
+    font-size: $input-font-size;
+    line-height: $input-font-size * $line-height-ratio;
+}

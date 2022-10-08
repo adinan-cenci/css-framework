@@ -52,23 +52,23 @@ body {
 
 /*---------------------------------------*/
 
-#example-inputs {
+.example-inputs {
     width: 100%;
     text-align: right;
 }
-    #example-inputs td {
+    .example-inputs td {
         width: 50%;
     }
 
-    #example-inputs td:last-child {
+    .example-inputs td:last-child {
         text-align: left;
     }
 
-    #example-inputs td[colspan] {
+    .example-inputs td[colspan] {
         text-align: center;
     }
 
-    #example-inputs th {
+    .example-inputs th {
         text-align: center;
     }
 

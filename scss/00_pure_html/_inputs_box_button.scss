@@ -1,0 +1,57 @@
+/*************************************
+#*** INPUT BUTTONS DIMENSIONS
+#************************************/
+%button-input-dimensions {
+    @extend %box-input-dimensions;
+    height: auto;
+    min-height: box-input-min-height();
+}
+
+/*************************************
+#*** INPUT BUTTONS LOOKS
+#************************************/
+
+// Normal
+%button-input-looks {
+    min-width: box-input-min-height();
+    cursor: pointer;
+    border: solid $border #a7a7a7;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center; /* flex-inline buttons will treat text just as an element*/
+    color: #2e3436;
+    background-color: #eaeaea;
+}
+
+// Disabled
+%button-input-looks[disabled] {    
+    cursor: not-allowed;
+    border-color: #b9bcb5;
+    color: #909394;
+    background-color: #f2f2f2
+}
+
+// Active
+%button-input-looks:not([disabled]):active {
+    background-color: #dbdbdb;
+}
+
+// Hover
+%button-input-looks:not([disabled]):hover {
+    text-decoration: none;
+    color: #2e3436;
+}
+
+/*************************************
+#*** SELECTORS
+#************************************/
+
+.simple {
+    button,
+    input[type=submit],
+    input[type=button],
+    input[type=reset] {
+        @extend %button-input-dimensions;
+        @extend %button-input-looks;
+    }
+}

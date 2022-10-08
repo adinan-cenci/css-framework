@@ -1,0 +1,17 @@
+.simple {
+    
+    .checkbox {
+        //@extend %button-input-looks;
+        @extend %button-input-dimensions;
+        @extend %button-input-looks;
+
+        input {
+            margin-right: $padding-h;
+        }
+    }
+
+    .checkbox:has(input:checked) {
+        color: white;
+        background-color: #3465a4;
+    }
+}

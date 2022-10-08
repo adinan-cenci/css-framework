@@ -6,12 +6,8 @@
   "author": "<adinan@zoocha.com>",
   "license": "MIT",
   "scripts": {
-    "compile_pure_html": "sass scss/00_pure_html/00_pure_html.scss dist/00_pure_html.css",
-    "compile_layout": "sass scss/01_layout/01_layout.scss dist/01_layout.css",
-    "compile_text": "sass scss/02_text/02_text.scss dist/02_text.css",
-    "compile_components": "sass scss/03_components/03_components.scss dist/03_components.css",
     "compile_everything": "sass scss/everything.scss dist/everything.css",
-    "compile": "yarn run compile_pure_html; yarn run compile_layout; yarn run compile_text; yarn run compile_components; yarn run compile_everything"
+    "compile": "yarn run compile_everything"
   },
   "dependencies": {
     "dart-sass": "^1.25.0"

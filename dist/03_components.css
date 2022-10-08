@@ -75,13 +75,34 @@ math.div in sass label[for] {
   cursor: pointer;
 }
 
+.simple input[type=radio]:focus,
+.simple input[type=checkbox]:focus, .simple textarea:focus,
+.simple select:focus,
+.simple input[type=text]:focus,
+.simple input[type=password]:focus,
+.simple input[type=url]:focus,
+.simple input[type=email]:focus,
+.simple input[type=tel]:focus,
+.simple input[type=date]:focus,
+.simple input[type=datetime-local]:focus,
+.simple input[type=month]:focus,
+.simple input[type=week]:focus,
+.simple input[type=time]:focus,
+.simple input[type=number]:focus,
+.simple input[type=search]:focus,
+.simple input[type=file]:focus,
+.simple input[type=color]:focus {
+  border: solid 1px #51a7e8;
+  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
 /*************************************
-#*** INPUTS
+#*** BOX INPUTS DIMENSIONS
 #************************************/
-/*************************************
-#*** DIMENSIONS
-#************************************/
-.simple .input-group-text, .simple .checkbox .label, .simple textarea,
+.simple .input-group-text, .simple .checkbox .label, .simple button,
+.simple input[type=submit],
+.simple input[type=button],
+.simple input[type=reset], .simple textarea,
 .simple select,
 .simple input[type=text],
 .simple input[type=password],
@@ -96,27 +117,17 @@ math.div in sass label[for] {
 .simple input[type=number],
 .simple input[type=search],
 .simple input[type=file],
-.simple input[type=color], .simple button,
-.simple input[type=submit],
-.simple input[type=button],
-.simple input[type=reset],
-.simple .btn {
+.simple input[type=color] {
   display: inline-block;
-  height: 24px;
-  padding: 0px 4px;
+  height: 38px;
+  padding: 6px 12px;
   border: solid 1px transparent;
-  font-size: 14.6666666667px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-/*
-%box-input-dimensions.big {
-    padding: math.div($padding, 2) $padding;
-    height: small-input-min-height();
-}
-*/
 /*************************************
-#*** Input text, select, textarea
+#*** TEXT INPUT LOOKS
 #************************************/
 .simple textarea,
 .simple select,
@@ -135,9 +146,12 @@ math.div in sass label[for] {
 .simple input[type=file],
 .simple input[type=color] {
   border: solid 1px #919191;
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   color: #555;
-  background-color: #fff;
+  background-color: white;
 }
 
 .simple textarea::-webkit-input-placeholder,
@@ -181,45 +195,67 @@ math.div in sass label[for] {
   background-color: #f4f4f2;
 }
 
-.simple input[type=radio]:focus,
-.simple input[type=checkbox]:focus, .simple textarea:focus,
-.simple select:focus,
-.simple input[type=text]:focus,
-.simple input[type=password]:focus,
-.simple input[type=url]:focus,
-.simple input[type=email]:focus,
-.simple input[type=tel]:focus,
-.simple input[type=date]:focus,
-.simple input[type=datetime-local]:focus,
-.simple input[type=month]:focus,
-.simple input[type=week]:focus,
-.simple input[type=time]:focus,
-.simple input[type=number]:focus,
-.simple input[type=search]:focus,
-.simple input[type=file]:focus,
-.simple input[type=color]:focus {
-  border: solid 1px #51a7e8;
-  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+/*************************************
+#*** SELECTORS
+#************************************/
+.simple {
+  /*************************************
+  #*** SELECT
+  #************************************/
+  /*************************************
+  #*** FILE
+  #************************************/
+}
+.simple textarea {
+  height: auto;
+  min-height: 134px;
+}
+.simple select[multiple] {
+  height: auto;
+  padding: 0px;
+}
+.simple select[multiple] option {
+  padding: 10px 12px;
+  line-height: 16px !important;
+}
+.simple input[type=file] {
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  cursor: pointer;
+}
+.simple input[type=file]::file-selector-button,
+.simple input[type=file]::-webkit-file-upload-button {
+  display: inline-block;
+  height: 38px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: solid 1px #919191;
+  margin-left: -12px;
+  margin-top: -6px;
+  background-color: #dbdbdb;
 }
 
 /*************************************
-#*** BUTTONS
+#*** INPUT BUTTONS DIMENSIONS
 #************************************/
 .simple button,
 .simple input[type=submit],
 .simple input[type=button],
-.simple input[type=reset],
-.simple .btn {
+.simple input[type=reset] {
   height: auto;
-  min-height: 24px;
+  min-height: 38px;
 }
 
+/*************************************
+#*** INPUT BUTTONS LOOKS
+#************************************/
 .simple button,
 .simple input[type=submit],
 .simple input[type=button],
-.simple input[type=reset],
-.simple .btn {
-  min-width: 24px;
+.simple input[type=reset] {
+  min-width: 38px;
   cursor: pointer;
   border: solid 1px #a7a7a7;
   border-radius: 3px;
@@ -230,173 +266,71 @@ math.div in sass label[for] {
   background-color: #eaeaea;
 }
 
-.simple button:active,
-.simple input[type=submit]:active,
-.simple input[type=button]:active,
-.simple input[type=reset]:active,
-.simple .btn:active,
-.simple button.active,
-.simple input.active[type=submit],
-.simple input.active[type=button],
-.simple input.active[type=reset],
-.simple .active.btn {
-  background-color: #dbdbdb;
-}
-
-.simple button:hover,
-.simple input[type=submit]:hover,
-.simple input[type=button]:hover,
-.simple input[type=reset]:hover,
-.simple .btn:hover {
-  text-decoration: none;
-  color: #2e3436;
-}
-
 .simple button[disabled],
 .simple input[disabled][type=submit],
 .simple input[disabled][type=button],
-.simple input[disabled][type=reset],
-.simple [disabled].btn {
+.simple input[disabled][type=reset] {
   cursor: not-allowed;
   border-color: #b9bcb5;
   color: #909394;
   background-color: #f2f2f2;
 }
 
-/*-----------*/
-.simple button.btn-main,
-.simple input.btn-main[type=submit],
-.simple input.btn-main[type=button],
-.simple input.btn-main[type=reset],
-.simple .btn-main.btn {
-  border-color: #1c5288;
-  color: #fff;
-  background-color: #4a90d9;
+.simple button:not([disabled]):active,
+.simple input[type=submit]:not([disabled]):active,
+.simple input[type=button]:not([disabled]):active,
+.simple input[type=reset]:not([disabled]):active {
+  background-color: #dbdbdb;
 }
 
-.simple button.btn-main:hover,
-.simple input.btn-main[type=submit]:hover,
-.simple input.btn-main[type=button]:hover,
-.simple input.btn-main[type=reset]:hover,
-.simple .btn-main.btn:hover {
-  color: #fff;
+.simple button:not([disabled]):hover,
+.simple input[type=submit]:not([disabled]):hover,
+.simple input[type=button]:not([disabled]):hover,
+.simple input[type=reset]:not([disabled]):hover {
+  text-decoration: none;
+  color: #2e3436;
 }
 
-.simple button.btn-main:active,
-.simple input.btn-main[type=submit]:active,
-.simple input.btn-main[type=button]:active,
-.simple input.btn-main[type=reset]:active,
-.simple .btn-main.btn:active {
-  background-color: #3b81ca;
+/*************************************
+#*** SELECTORS
+#************************************/
+/*************************************
+#*** COLOR INPUT
+#************************************/
+.simple input[type=color] {
+  position: relative;
+  padding: 0;
+}
+.simple input[type=color]::-webkit-color-swatch {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0px;
 }
 
-/*-----------*/
-.simple button.btn-danger,
-.simple input.btn-danger[type=submit],
-.simple input.btn-danger[type=button],
-.simple input.btn-danger[type=reset],
-.simple .btn-danger.btn {
-  border-color: #910f0f;
-  color: #fff;
-  background-color: #ee2222;
+/*************************************
+#*** RANGE INPUT
+#************************************/
+.simple input[type=range] {
+  height: 38px;
 }
 
-.simple button.btn-danger:hover,
-.simple input.btn-danger[type=submit]:hover,
-.simple input.btn-danger[type=button]:hover,
-.simple input.btn-danger[type=reset]:hover,
-.simple .btn-danger.btn:hover {
-  color: #fff;
-}
-
-.simple button.btn-danger:active,
-.simple input.btn-danger[type=submit]:active,
-.simple input.btn-danger[type=button]:active,
-.simple input.btn-danger[type=reset]:active,
-.simple .btn-danger.btn:active {
-  background-color: #df1313;
-}
-
-/*-----------*/
-.simple button.btn-positive,
-.simple input.btn-positive[type=submit],
-.simple input.btn-positive[type=button],
-.simple input.btn-positive[type=reset],
-.simple .btn-positive.btn {
-  border-color: #376c04;
-  color: #fff;
-  background-color: #4e9a06;
-}
-
-.simple button.btn-positive:hover,
-.simple input.btn-positive[type=submit]:hover,
-.simple input.btn-positive[type=button]:hover,
-.simple input.btn-positive[type=reset]:hover,
-.simple .btn-positive.btn:hover {
-  color: #fff;
-}
-
-.simple button.btn-positive:active,
-.simple input.btn-positive[type=submit]:active,
-.simple input.btn-positive[type=button]:active,
-.simple input.btn-positive[type=reset]:active,
-.simple .btn-positive.btn:active {
-  background-color: #408102;
-}
-
+/*************************************
+#*** INLINE INPUTS DIMENSIONS
+#************************************/
+/*************************************
+#*** SELECTORS
+#************************************/
 .simple {
   /*************************************
-  #*** Selectors: Input text
+  #*** CHECKBOX
   #************************************/
   /*************************************
-  #*** Selectors: Input buttons
+  #*** RADIO
   #************************************/
-  /*************************************
-  #*** Selectors: SELECT
-  #************************************/
-  /*************************************
-  #*** COLOR
-  #************************************/
-  /*************************************
-  #*** CHECKS AND RADIOS BUTTONS
-  #************************************/
-  /* radio */
-  /*************************************
-  #*** Selectors: INPUT FILE
-  #************************************/
-  /*input[type=file] {
-      appearance: textfield;
-      -webkit-appearance: textfield;
-      -moz-appearance: textfield;
-      cursor: pointer;
-  }
-
-  input[type=file]::file-selector-button, 
-  input[type=file]::-webkit-file-upload-button {
-
-  }*/
-  /*************************************
-  #*** Selectors: PROGRESS BAR
-  #************************************/
-  /*************************************
-  #*** Selectors: FIELDSET
-  #************************************/
-}
-.simple textarea {
-  height: auto;
-  min-height: 120px;
-}
-.simple .btn {
-  text-decoration: none;
-}
-.simple select[multiple] {
-  height: auto;
-}
-.simple select[multiple] option {
-  padding: 5px;
-}
-.simple input[type=color] {
-  padding: 2px 5px;
 }
 .simple input[type=radio],
 .simple input[type=checkbox] {
@@ -404,10 +338,8 @@ math.div in sass label[for] {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  width: 1.5em;
-  /* line height */
-  height: 1.5em;
-  /* line height */
+  width: 24px;
+  height: 24px;
   border: solid 1px #a1a1a1;
   border-radius: 3px;
   text-align: center;
@@ -424,51 +356,6 @@ math.div in sass label[for] {
 }
 .simple input[type=radio]:checked {
   background: radial-gradient(#2e3436 0%, #2e3436 25%, #e4e4e4 30%);
-}
-.simple .checkbox {
-  display: inline-block;
-  position: relative;
-}
-.simple .checkbox input {
-  position: absolute;
-  z-index: 3;
-  left: 11px;
-  top: 11px;
-  height: 24px;
-}
-.simple .checkbox .label {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-  padding-left: 45px;
-  border-color: #b9bcb5;
-  border-radius: 3px;
-  background-color: #f2f2f2;
-}
-.simple .checkbox input:checked + .label {
-  color: #fff;
-  background-color: #3465a4;
-}
-.simple progress::-webkit-progress-bar {
-  -webkit-appearance: none;
-  border-radius: 3px;
-  background-color: #dbdbdb;
-  box-shadow: inset 1px 1px #919191, inset -1px -1px #919191;
-}
-.simple progress::-webkit-progress-value {
-  border-radius: 3px;
-  background-color: #4a90d9;
-  box-shadow: inset 1px 1px #1c5288, inset -1px -1px #1c5288;
-}
-.simple fieldset {
-  padding: 20px;
-  border-radius: 3px;
-  margin-bottom: 20px;
-  border: solid 1px #a7a7a7;
-}
-.simple fieldset legend {
-  padding: 0px 20px;
-  margin: 0px auto 0px 0px;
 }
 
 .simple {
@@ -740,13 +627,112 @@ math.div in sass label[for] {
 }
 
 /*************************************
+#*** BUTTONS LOOKS
+#************************************/
+.simple button.btn-main,
+.simple input.btn-main[type=submit],
+.simple input.btn-main[type=button],
+.simple input.btn-main[type=reset] {
+  border-color: #1c5288;
+  color: #fff;
+  background-color: #4a90d9;
+}
+
+.simple button.btn-main:hover,
+.simple input.btn-main[type=submit]:hover,
+.simple input.btn-main[type=button]:hover,
+.simple input.btn-main[type=reset]:hover {
+  color: #fff;
+}
+
+.simple button.btn-main:active,
+.simple input.btn-main[type=submit]:active,
+.simple input.btn-main[type=button]:active,
+.simple input.btn-main[type=reset]:active {
+  background-color: #3b81ca;
+}
+
+/*-----------*/
+.simple button.btn-danger,
+.simple input.btn-danger[type=submit],
+.simple input.btn-danger[type=button],
+.simple input.btn-danger[type=reset] {
+  border-color: #910f0f;
+  color: #fff;
+  background-color: #ee2222;
+}
+
+.simple button.btn-danger:hover,
+.simple input.btn-danger[type=submit]:hover,
+.simple input.btn-danger[type=button]:hover,
+.simple input.btn-danger[type=reset]:hover {
+  color: #fff;
+}
+
+.simple button.btn-danger:active,
+.simple input.btn-danger[type=submit]:active,
+.simple input.btn-danger[type=button]:active,
+.simple input.btn-danger[type=reset]:active {
+  background-color: #df1313;
+}
+
+/*-----------*/
+.simple button.btn-positive,
+.simple input.btn-positive[type=submit],
+.simple input.btn-positive[type=button],
+.simple input.btn-positive[type=reset] {
+  border-color: #376c04;
+  color: #fff;
+  background-color: #4e9a06;
+}
+
+.simple button.btn-positive:hover,
+.simple input.btn-positive[type=submit]:hover,
+.simple input.btn-positive[type=button]:hover,
+.simple input.btn-positive[type=reset]:hover {
+  color: #fff;
+}
+
+.simple button.btn-positive:active,
+.simple input.btn-positive[type=submit]:active,
+.simple input.btn-positive[type=button]:active,
+.simple input.btn-positive[type=reset]:active {
+  background-color: #408102;
+}
+
+.simple .checkbox {
+  display: inline-block;
+  position: relative;
+}
+.simple .checkbox input {
+  position: absolute;
+  z-index: 3;
+  left: 11px;
+  top: 11px;
+  height: 24px;
+}
+.simple .checkbox .label {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  padding-left: 45px;
+  border-color: #b9bcb5;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+.simple .checkbox input:checked + .label {
+  color: #fff;
+  background-color: #3465a4;
+}
+
+/*************************************
 #*** INPUT GROUP
 #************************************/
 .simple .input-group-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
+  min-width: input-min-height();
   border: 1px solid #919191;
   text-align: center;
   background-color: #e9ecef;

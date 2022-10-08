@@ -1,106 +1,12 @@
 
-@import '../00_pure_html/_inputs.scss';
-@import '../01_layout/grids.scss';
-
-/*************************************
-#*** INPUT GROUP
-#************************************/
-
-.simple {
-
-    .input-group-text {
-        @extend %box-input-dimensions;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: input-min-height();
-        border: 1px solid #919191;
-        text-align: center;
-        background-color: #e9ecef;
-
-        input[type='checkbox'], 
-        input[type='radio'] {
-            width: 1.5em;
-            height: 1.5em;
-        }
-    }
-
-    .input-group {
-        @extend .flex;
-
-        .main {
-            flex-grow: 1;
-        }
-
-        > input, 
-        > textarea, 
-        > select, 
-        > button,
-        > .btn, 
-        > .input-group-text {
-            height: auto;
-            border-radius: 0px;
-            margin-left: -1px;
-        }
-
-        > input:first-child, 
-        > textarea:first-child, 
-        > select:first-child, 
-        > button:first-child, 
-        > .btn:first-child, 
-        > .input-group-text:first-child {
-            border-radius: 3px 0px 0px 3px;
-            margin-left: 0px;
-        }
-
-        > input:last-child, 
-        > textarea:last-child, 
-        > select:last-child, 
-        > button:last-child, 
-        > .btn:last-child, 
-        > .input-group-text:last-child {
-            border-radius: 0px 3px 3px 0px;
-        }
-    }
-}
+@import './_forms_buttons.scss';
+@import './_forms_derived_inputs.scss';
+@import './_forms_input_group.scss';
+@import './_forms_button_group.scss';
 
 /*************************************
 #*** FORM GROUP
 #************************************/
-
-.simple {
-    .button-group {
-        @extend .flex;
-        display: inline-flex;
-        width: auto;
-
-        > input, 
-        > button,
-        > .btn {
-            height: auto;
-            border-radius: 0px;
-            margin-left: -1px;
-        }
-
-        > input:first-child,  
-        > button:first-child, 
-        > .btn:first-child {
-            border-radius: 3px 0px 0px 3px;
-            margin-left: 0px;
-        }
-
-        > input:last-child, 
-        > button:last-child, 
-        > .btn:last-child {
-            border-radius: 0px 3px 3px 0px;
-        }
-    }
-}
-
-/*************************************
-#*** FORM GROUP
-#************************************/
-
 .simple {
     
     .form-group {
@@ -153,16 +59,3 @@
     }
 }
 
-/*************************************
-#*** VERTICAL FORMS
-#************************************/
-
-.simple {
-    
-    .vertical .form-group, 
-    .form-group.vertical {
-
-       
-
-    }
-}

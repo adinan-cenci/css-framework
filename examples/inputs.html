@@ -40,13 +40,9 @@
 
             <div id="middle">
 
-                <div style="text-align: center;">
-                    <span style="display: inline-block;">Regular text</span> <input type="text" name="name" value="Something" /> <button>Some button</button>
-                </div>
-
-                <table id="example-inputs" class="table horizontaly-striped">
+                <table class="example-inputs table horizontaly-striped">
                     <tr>
-                        <th colspan="2">Text</th>
+                        <th colspan="2">BOX INPUT:<br>Text input</th>
                     </tr>
                     <tr>
                         <td>Label</td>
@@ -106,10 +102,6 @@
                     </tr>
 
                     <tr>
-                        <th colspan="2">Date and time</th>
-                    </tr>
-
-                    <tr>
                         <td>Date:</td>
                         <td><input type="date" value="2019-01-01"></td>
                     </tr>
@@ -132,10 +124,16 @@
                     <tr>
                         <td>Time:</td>
                         <td><input type="time"></td>
-                    </tr>                
+                    </tr>
 
                     <tr>
-                        <th colspan="2">Select</th>
+                        <td>File</td>
+                        <td><input type="file"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Color:</td>
+                        <td><input type="color"></td>
                     </tr>
 
                     <tr>
@@ -174,7 +172,47 @@
                     </tr>
 
                     <tr>
-                        <th colspan="2">Radio / checkbox</th>
+                        <th colspan="2">BOX INPUT:<br>Buttons</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Button
+                        </td>
+                        <td>
+                            <button>Regular</button>
+                            <button disabled>:disabled</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Input button
+                        </td>
+                        <td>
+                            <input type="button" value="Regular"/>
+                            <input type="button" value=":disabled" disabled/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Input submit
+                        </td>
+                        <td>
+                            <input type="submit" value="Regular"/>
+                            <input type="submit" value=":disabled" disabled/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Input reset
+                        </td>
+                        <td>
+                            <input type="reset" value="Regular"/>
+                            <input type="reset" value=":disabled" disabled/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">INLINE INPUTS:<br>Radio / checkbox</th>
                     </tr>
 
                     <tr>
@@ -183,83 +221,15 @@
                     </tr>
                     <tr>
                         <td>Input Checkbox</td>
-                        <td><input type="checkbox" id="check" /></td>
+                        <td><input type="checkbox" name="check" /> <input type="checkbox" name="check2" /></td>
                     </tr>
 
-                    <tr>
-                        <td>Labeled</td>
-                        <td>
-                            <label class="checkbox">
-                                <input type="checkbox" name="input" value="1" /><span class="label">I agree to the <a>terms of use</a>.</span>
-                            </label>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <th colspan="2">Buttons</th>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            Normal
-                        </td>
-                        <td>
-                            <button>Regular</button>
-                            <button disabled>:disabled</button>
-                            <button class="btn-main">.btn-main</button>
-                            <button class="btn-danger">.btn-danger</button>
-                            <button class="btn-positive">.btn-positive</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Small
-                        </td>
-                        <td>
-                            <button class="small">Regular</button>
-                            <button disabled class="small">:disabled</button>
-                            <button class="btn-main small">.btn-main</button>
-                            <button class="btn-danger small">.btn-danger</button>
-                            <button class="btn-positive small">.btn-positive</button>
-                        </td>
-                    </tr>
                     <tr>
                         <th colspan="2">Others</th>
                     </tr>
-
                     <tr>
                         <td>Range:</td>
                         <td><input type="range" min="0" max="5"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Color:</td>
-                        <td><input type="color"></td>
-                    </tr>              
-                    <tr>
-                        <td>File</td>
-                        <td><input type="file"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Progress bar</td>
-                        <td><progress value="75" max="100"></progress></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">
-                            <fieldset>
-                                <legend>Contact</legend>
-                                <p>Your contact info here...</p>
-                            </fieldset>
-
-                            <fieldset>
-                                <legend>Something something</legend>
-                                <p>Lorem ipsum dolor sit amet...</p>
-                            </fieldset>
-                        </td>
                     </tr>
                 </table>
 

@@ -1,0 +1,108 @@
+/*************************************
+#*** TEXT INPUT LOOKS
+#************************************/
+
+// Normal
+%text-input-looks {
+    border: solid $border #919191;
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    color: #555;
+    background-color: white;
+}
+
+%text-input-looks::-webkit-input-placeholder {
+    color: #8d8f8a;
+}
+
+// Disabled
+%text-input-looks[disabled] {
+    cursor: not-allowed;
+    border: solid $border #b9bcb5;
+    color: #7a7a79;
+    background-color: #f4f4f2;
+}
+
+// Focused
+%text-input-looks:focus {
+    @extend %input-focus;
+}
+
+/*************************************
+#*** SELECTORS
+#************************************/
+.simple {
+
+    textarea, 
+    select, 
+    input[type=text], 
+    input[type=password], 
+    input[type=url], 
+    input[type=email], 
+    input[type=tel], 
+    input[type=date], 
+    input[type=datetime-local], 
+    input[type=month], 
+    input[type=week], 
+    input[type=time], 
+    input[type=number], 
+    input[type=search], 
+    input[type=file], 
+    input[type=color] {
+        @extend %box-input-dimensions;
+        @extend %text-input-looks;
+    }
+
+    textarea {
+        height: auto;
+        min-height: box-input-min-height(5);
+    }
+
+    /*************************************
+    #*** SELECT
+    #************************************/
+    $multi-select-v-padding: math.div(box-input-min-height(1) - $input-font-size - $border * 2, 2);
+
+    select[multiple] {
+        height: auto;
+        padding: 0px;
+        option { // it should be 36 px hight, but for some reason it is rendering as 38
+            padding: $multi-select-v-padding $padding-h;
+            line-height: $input-font-size !important;
+        }
+    }
+
+
+    /*************************************
+    #*** FILE
+    #************************************/
+    input[type=file] {
+        appearance: textfield;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+
+        cursor: pointer;
+    }
+
+    input[type=file]::file-selector-button, 
+    input[type=file]::-webkit-file-upload-button {
+        display: inline-block;
+
+        height: box-input-min-height($lines: 1);
+        
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: solid 1px #919191;
+
+        margin-left: $padding-h * -1;
+        margin-top: $padding-v * -1;
+        margin-bottom: $padding-v * -1;
+
+        background-color: #dbdbdb;
+    }
+}

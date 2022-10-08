@@ -1,0 +1,50 @@
+/*************************************
+#*** BUTTONS LOOKS
+#************************************/
+
+// MAIN
+%button-input-looks.btn-main {
+    border-color: #1c5288;
+    color: #fff;
+    background-color: #4a90d9;
+}
+
+%button-input-looks.btn-main:hover {
+    color: #fff;
+}
+
+%button-input-looks.btn-main:active {
+    background-color: #3b81ca;
+}
+
+
+// DANGER
+%button-input-looks.btn-danger {
+    border-color: #910f0f;
+    color: #fff;
+    background-color: #ee2222;
+}
+
+%button-input-looks.btn-danger:hover {
+    color: #fff;
+}
+
+%button-input-looks.btn-danger:active {
+    background-color: #df1313;
+}
+
+
+// POSITIVE
+%button-input-looks.btn-positive {
+    border-color: #376c04;
+    color: #fff;
+    background-color: #4e9a06;
+}
+
+%button-input-looks.btn-positive:hover {
+    color: #fff;
+}
+
+%button-input-looks.btn-positive:active {
+    background-color: #408102;
+}
