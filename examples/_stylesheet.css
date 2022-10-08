@@ -12,26 +12,33 @@ body {
 
     #header ul {
         display: flex;
+        justify-content: space-between;
         padding: 0px;
         margin: 0px;
         list-style: none;
     }
 
         #header li {
-            margin: 0px auto;
+            margin: 0px 0px;
         }
 
-        #header ul a {
+        #header li a {
             display: block;
-            padding: 20px;
-            color: #fff;
+            width: 100%;
+            padding: 6px 10px;
             font-size: 16px;
             line-height: 1em;
+            text-align: center;
             text-decoration: none;
+            color: #fff;
         }
 
         #header ul a:hover {
             background-color: #4FA3E4;
+        }
+
+        #header li a:first-child:last-child {
+            padding: 20px 10px;
         }
 
 /*---------------------------------------*/
@@ -40,11 +47,13 @@ body {
     width: 1100px;
     padding-top: 40px;
     max-width: 100%;
+    margin: 0px auto;
 }
 
 /*---------------------------------------*/
 
 #example-inputs {
+    width: 100%;
     text-align: right;
 }
     #example-inputs td {
@@ -71,6 +80,8 @@ body {
     border: solid 1px #ccc;
     background-color: #fff;
 }
+
+/*---------------------------------------*/
 
 #example-grids .card {
     min-height: 100%;

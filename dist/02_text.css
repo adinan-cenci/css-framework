@@ -1,0 +1,41 @@
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.intangible {
+  pointer-events: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-in-columns {
+  column-count: 3;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-gap: 40px;
+  -moz-column-gap: 40px;
+  -webkit-column-gap: 40px;
+  column-rule: solid 1px #9a9999;
+  -moz-column-rule: solid 1px #9a9999;
+  -webkit-column-rule: solid 1px #9a9999;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=02_text.css.map */

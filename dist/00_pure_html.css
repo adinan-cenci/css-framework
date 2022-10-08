@@ -1,0 +1,668 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  font-family: "Roboto", "Arial";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+}
+
+/*------------------------------------------*/
+.simple * {
+  pointer-events: inherit;
+  vertical-align: top;
+  direction: inherit;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: 0px auto 0px auto;
+  outline: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  text-align: inherit;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.simple {
+  /*************************************
+  #*** HEADERS
+  #************************************/
+  /*************************************
+  #*** BLOCKS OF TEXT
+  #************************************/
+  /*************************************
+  #*** INLINE TEXT
+  #************************************/
+  /*************************************
+  #*** LINK
+  #************************************/
+}
+.simple h1, .simple h2, .simple h3, .simple h4, .simple h5, .simple h6 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.simple h1 {
+  font-size: 2em;
+  line-height: 1.5;
+}
+.simple h2 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.simple h3 {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+.simple h4 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.simple h5 {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+.simple h6 {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.simple blockquote {
+  padding: 10px 20px;
+  border-left: solid 3px grey;
+  margin-bottom: 20px;
+}
+.simple blockquote cite {
+  display: block;
+  font-style: italic;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+.simple p {
+  margin-bottom: 20px;
+}
+.simple strong, .simple b {
+  font-weight: bold;
+}
+.simple em, .simple i {
+  font-style: italic;
+}
+.simple abbr[title] {
+  cursor: help;
+}
+.simple code,
+.simple samp,
+.simple pre {
+  font-family: "Source Code Pro", "Courier";
+  /* monospace */
+}
+.simple code {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 0.125em 5px;
+  font-size: 0.75em;
+  line-height: 1em;
+  background-color: #e7e7e7;
+}
+.simple var {
+  font-style: italic;
+}
+.simple sup, .simple sub {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+.simple sup {
+  vertical-align: top;
+}
+.simple sub {
+  vertical-align: bottom;
+}
+.simple small {
+  vertical-align: baseline;
+  font-size: 0.75em;
+  line-height: 1.5;
+}
+.simple a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.simple a:link {
+  color: #0366d6;
+}
+.simple a:visited {
+  color: darkmagenta;
+}
+.simple a:hover {
+  text-decoration: underline;
+}
+.simple a:active {
+  color: red;
+}
+
+.simple ol,
+.simple ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+.simple ol ol,
+.simple ol ul,
+.simple ul ul,
+.simple ul ol {
+  margin-bottom: 0px;
+}
+.simple li + li {
+  margin-top: 2px;
+}
+
+/*************************************
+#*** BLOCKS
+#************************************/
+.simple hr {
+  height: 1px;
+  border-top: solid 1px #919191;
+  margin: 20px auto;
+}
+
+.simple {
+  /*************************************
+  #*** TABLE
+  #************************************/
+}
+.simple table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0px auto 20px auto;
+  caption-side: top;
+}
+.simple table caption {
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  background-color: #C5D3F6;
+}
+.simple table td, .simple table th {
+  padding: 10px;
+  border: none;
+  vertical-align: middle;
+}
+.simple table th {
+  border-color: #303f9f;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #303F9F;
+}
+.simple table thead th {
+  border-color: #3F51B5;
+  background-color: #3F51B5;
+}
+.simple table td {
+  border-color: #DFDEE3;
+}
+.simple table th:first-child,
+.simple table td:first-child {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+.simple table th:last-child,
+.simple table td:last-child {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+.simple table tr:last-child td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", "Arial";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+}
+
+/*------------------------------------------*/
+.simple * {
+  pointer-events: inherit;
+  vertical-align: top;
+  direction: inherit;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: 0px auto 0px auto;
+  outline: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  text-align: inherit;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+math.div in sass label[for] {
+  cursor: pointer;
+}
+
+/*************************************
+#*** INPUTS
+#************************************/
+/*************************************
+#*** DIMENSIONS
+#************************************/
+.simple .checkbox .label, .simple textarea,
+.simple select,
+.simple input[type=text],
+.simple input[type=password],
+.simple input[type=url],
+.simple input[type=email],
+.simple input[type=tel],
+.simple input[type=date],
+.simple input[type=datetime-local],
+.simple input[type=month],
+.simple input[type=week],
+.simple input[type=time],
+.simple input[type=number],
+.simple input[type=search],
+.simple input[type=file],
+.simple input[type=color], .simple button,
+.simple input[type=submit],
+.simple input[type=button],
+.simple input[type=reset],
+.simple .btn {
+  display: inline-block;
+  height: 24px;
+  padding: 0px 4px;
+  border: solid 1px transparent;
+  font-size: 14.6666666667px;
+  line-height: 22px;
+}
+
+/*
+%box-input-dimensions.big {
+    padding: math.div($padding, 2) $padding;
+    height: small-input-min-height();
+}
+*/
+/*************************************
+#*** Input text, select, textarea
+#************************************/
+.simple textarea,
+.simple select,
+.simple input[type=text],
+.simple input[type=password],
+.simple input[type=url],
+.simple input[type=email],
+.simple input[type=tel],
+.simple input[type=date],
+.simple input[type=datetime-local],
+.simple input[type=month],
+.simple input[type=week],
+.simple input[type=time],
+.simple input[type=number],
+.simple input[type=search],
+.simple input[type=file],
+.simple input[type=color] {
+  border: solid 1px #919191;
+  border-radius: 3px;
+  color: #555;
+  background-color: #fff;
+}
+
+.simple textarea::-webkit-input-placeholder,
+.simple select::-webkit-input-placeholder,
+.simple input[type=text]::-webkit-input-placeholder,
+.simple input[type=password]::-webkit-input-placeholder,
+.simple input[type=url]::-webkit-input-placeholder,
+.simple input[type=email]::-webkit-input-placeholder,
+.simple input[type=tel]::-webkit-input-placeholder,
+.simple input[type=date]::-webkit-input-placeholder,
+.simple input[type=datetime-local]::-webkit-input-placeholder,
+.simple input[type=month]::-webkit-input-placeholder,
+.simple input[type=week]::-webkit-input-placeholder,
+.simple input[type=time]::-webkit-input-placeholder,
+.simple input[type=number]::-webkit-input-placeholder,
+.simple input[type=search]::-webkit-input-placeholder,
+.simple input[type=file]::-webkit-input-placeholder,
+.simple input[type=color]::-webkit-input-placeholder {
+  color: #8d8f8a;
+}
+
+.simple textarea[disabled],
+.simple select[disabled],
+.simple input[disabled][type=text],
+.simple input[disabled][type=password],
+.simple input[disabled][type=url],
+.simple input[disabled][type=email],
+.simple input[disabled][type=tel],
+.simple input[disabled][type=date],
+.simple input[disabled][type=datetime-local],
+.simple input[disabled][type=month],
+.simple input[disabled][type=week],
+.simple input[disabled][type=time],
+.simple input[disabled][type=number],
+.simple input[disabled][type=search],
+.simple input[disabled][type=file],
+.simple input[disabled][type=color] {
+  cursor: not-allowed;
+  border: solid 1px #b9bcb5;
+  color: #7a7a79;
+  background-color: #f4f4f2;
+}
+
+.simple input[type=radio]:focus,
+.simple input[type=checkbox]:focus, .simple textarea:focus,
+.simple select:focus,
+.simple input[type=text]:focus,
+.simple input[type=password]:focus,
+.simple input[type=url]:focus,
+.simple input[type=email]:focus,
+.simple input[type=tel]:focus,
+.simple input[type=date]:focus,
+.simple input[type=datetime-local]:focus,
+.simple input[type=month]:focus,
+.simple input[type=week]:focus,
+.simple input[type=time]:focus,
+.simple input[type=number]:focus,
+.simple input[type=search]:focus,
+.simple input[type=file]:focus,
+.simple input[type=color]:focus {
+  border: solid 1px #51a7e8;
+  box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+/*************************************
+#*** BUTTONS
+#************************************/
+.simple button,
+.simple input[type=submit],
+.simple input[type=button],
+.simple input[type=reset],
+.simple .btn {
+  height: auto;
+  min-height: 24px;
+}
+
+.simple button,
+.simple input[type=submit],
+.simple input[type=button],
+.simple input[type=reset],
+.simple .btn {
+  min-width: 24px;
+  cursor: pointer;
+  border: solid 1px #a7a7a7;
+  border-radius: 3px;
+  text-align: center;
+  justify-content: center;
+  /* flex-inline buttons will treat text just as an element*/
+  color: #2e3436;
+  background-color: #eaeaea;
+}
+
+.simple button:active,
+.simple input[type=submit]:active,
+.simple input[type=button]:active,
+.simple input[type=reset]:active,
+.simple .btn:active,
+.simple button.active,
+.simple input.active[type=submit],
+.simple input.active[type=button],
+.simple input.active[type=reset],
+.simple .active.btn {
+  background-color: #dbdbdb;
+}
+
+.simple button:hover,
+.simple input[type=submit]:hover,
+.simple input[type=button]:hover,
+.simple input[type=reset]:hover,
+.simple .btn:hover {
+  text-decoration: none;
+  color: #2e3436;
+}
+
+.simple button[disabled],
+.simple input[disabled][type=submit],
+.simple input[disabled][type=button],
+.simple input[disabled][type=reset],
+.simple [disabled].btn {
+  cursor: not-allowed;
+  border-color: #b9bcb5;
+  color: #909394;
+  background-color: #f2f2f2;
+}
+
+/*-----------*/
+.simple button.btn-main,
+.simple input.btn-main[type=submit],
+.simple input.btn-main[type=button],
+.simple input.btn-main[type=reset],
+.simple .btn-main.btn {
+  border-color: #1c5288;
+  color: #fff;
+  background-color: #4a90d9;
+}
+
+.simple button.btn-main:hover,
+.simple input.btn-main[type=submit]:hover,
+.simple input.btn-main[type=button]:hover,
+.simple input.btn-main[type=reset]:hover,
+.simple .btn-main.btn:hover {
+  color: #fff;
+}
+
+.simple button.btn-main:active,
+.simple input.btn-main[type=submit]:active,
+.simple input.btn-main[type=button]:active,
+.simple input.btn-main[type=reset]:active,
+.simple .btn-main.btn:active {
+  background-color: #3b81ca;
+}
+
+/*-----------*/
+.simple button.btn-danger,
+.simple input.btn-danger[type=submit],
+.simple input.btn-danger[type=button],
+.simple input.btn-danger[type=reset],
+.simple .btn-danger.btn {
+  border-color: #910f0f;
+  color: #fff;
+  background-color: #ee2222;
+}
+
+.simple button.btn-danger:hover,
+.simple input.btn-danger[type=submit]:hover,
+.simple input.btn-danger[type=button]:hover,
+.simple input.btn-danger[type=reset]:hover,
+.simple .btn-danger.btn:hover {
+  color: #fff;
+}
+
+.simple button.btn-danger:active,
+.simple input.btn-danger[type=submit]:active,
+.simple input.btn-danger[type=button]:active,
+.simple input.btn-danger[type=reset]:active,
+.simple .btn-danger.btn:active {
+  background-color: #df1313;
+}
+
+/*-----------*/
+.simple button.btn-positive,
+.simple input.btn-positive[type=submit],
+.simple input.btn-positive[type=button],
+.simple input.btn-positive[type=reset],
+.simple .btn-positive.btn {
+  border-color: #376c04;
+  color: #fff;
+  background-color: #4e9a06;
+}
+
+.simple button.btn-positive:hover,
+.simple input.btn-positive[type=submit]:hover,
+.simple input.btn-positive[type=button]:hover,
+.simple input.btn-positive[type=reset]:hover,
+.simple .btn-positive.btn:hover {
+  color: #fff;
+}
+
+.simple button.btn-positive:active,
+.simple input.btn-positive[type=submit]:active,
+.simple input.btn-positive[type=button]:active,
+.simple input.btn-positive[type=reset]:active,
+.simple .btn-positive.btn:active {
+  background-color: #408102;
+}
+
+.simple {
+  /*************************************
+  #*** Selectors: Input text
+  #************************************/
+  /*************************************
+  #*** Selectors: Input buttons
+  #************************************/
+  /*************************************
+  #*** Selectors: SELECT
+  #************************************/
+  /*************************************
+  #*** COLOR
+  #************************************/
+  /*************************************
+  #*** CHECKS AND RADIOS BUTTONS
+  #************************************/
+  /* radio */
+  /*************************************
+  #*** Selectors: INPUT FILE
+  #************************************/
+  /*input[type=file] {
+      appearance: textfield;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      cursor: pointer;
+  }
+
+  input[type=file]::file-selector-button, 
+  input[type=file]::-webkit-file-upload-button {
+
+  }*/
+  /*************************************
+  #*** Selectors: PROGRESS BAR
+  #************************************/
+  /*************************************
+  #*** Selectors: FIELDSET
+  #************************************/
+}
+.simple textarea {
+  height: auto;
+  min-height: 120px;
+}
+.simple .btn {
+  text-decoration: none;
+}
+.simple select[multiple] {
+  height: auto;
+}
+.simple select[multiple] option {
+  padding: 5px;
+}
+.simple input[type=color] {
+  padding: 2px 5px;
+}
+.simple input[type=radio],
+.simple input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  width: 1.5em;
+  /* line height */
+  height: 1.5em;
+  /* line height */
+  border: solid 1px #a1a1a1;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 23px;
+  content: "";
+  color: #2e3436;
+  background-color: #e4e4e4;
+}
+.simple input[type=checkbox]:checked:after {
+  content: "✔";
+}
+.simple input[type=radio] {
+  border-radius: 50px;
+}
+.simple input[type=radio]:checked {
+  background: radial-gradient(#2e3436 0%, #2e3436 25%, #e4e4e4 30%);
+}
+.simple .checkbox {
+  display: inline-block;
+  position: relative;
+}
+.simple .checkbox input {
+  position: absolute;
+  z-index: 3;
+  left: 11px;
+  top: 11px;
+  height: 24px;
+}
+.simple .checkbox .label {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  padding-left: 45px;
+  border-color: #b9bcb5;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+.simple .checkbox input:checked + .label {
+  color: #fff;
+  background-color: #3465a4;
+}
+.simple progress::-webkit-progress-bar {
+  -webkit-appearance: none;
+  border-radius: 3px;
+  background-color: #dbdbdb;
+  box-shadow: inset 1px 1px #919191, inset -1px -1px #919191;
+}
+.simple progress::-webkit-progress-value {
+  border-radius: 3px;
+  background-color: #4a90d9;
+  box-shadow: inset 1px 1px #1c5288, inset -1px -1px #1c5288;
+}
+.simple fieldset {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: solid 1px #a7a7a7;
+}
+.simple fieldset legend {
+  padding: 0px 20px;
+  margin: 0px auto 0px 0px;
+}
+
+/*************************************
+#*** INPUT FILE
+#************************************/
+.firefox-browser {
+  /*as expected, it works wonderfuly in chrome, but not so much in firefox*/
+  /*the dots are large and together */
+}
+.firefox-browser input[type=file] {
+  height: auto;
+  padding: 4px;
+}
+.firefox-browser input[type=password] {
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+/*# sourceMappingURL=00_pure_html.css.map */

@@ -1,8 +1,3 @@
-.column {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .ellipsis {
     overflow: hidden;
     white-space: nowrap;
@@ -14,12 +9,20 @@
     -webkit-user-select: none;
 }
 
+.intangible {
+    pointer-events: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
 .text-center {
     text-align: center;
 }
 
-.intangible {
-    pointer-events: none;
+.text-right {
+    text-align: right;
 }
 
 .text-in-columns {

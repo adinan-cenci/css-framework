@@ -1,4 +1,7 @@
 @use "sass:math";
+
+@import './_global.scss';
+
 math.div in sass
 
 label[for] {
@@ -9,19 +12,19 @@ label[for] {
 #*** INPUTS
 #************************************/
 
-$padding: 10px;
+$padding-v: 0px;
+$padding-h: 4px;
 $border:  1px;
+
+// 16px * 1.5em = 24px
+// 24 - 2 border = 22
+// 22 - 4 padding = 18
+// 18 / 1.5 = 12
+$input-font-size: math.div(($base-line-height - $border * 2 - $padding-v * 2), 1.5);
 
 @function input-min-height($lines: 1)
 {
-    // 24px * lines + (10px padding * 2) + (1px border * 2)
-    @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding * 2 ) + ( $border * 2 ) );
-}
-
-@function small-input-min-height($lines: 1)
-{
-    // 24px * lines + (5px padding * 2) + (1px border * 2)
-    @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding ) + ( $border * 2 ) );
+    @return ceil( $base-line-height * $lines );
 }
 
 /*************************************
@@ -32,17 +35,19 @@ $border:  1px;
     display: inline-block;
     height: input-min-height();
 
-    padding: $padding;
+    padding: $padding-v $padding-h;
     border: solid $border transparent;
 
-    font-size: $base-font-size;
-    line-height: $base-font-size * $line-height-ratio;
+    font-size: $input-font-size;
+    line-height: $input-font-size * $line-height-ratio;
 }
 
-%box-input-dimensions.small {
+/*
+%box-input-dimensions.big {
     padding: math.div($padding, 2) $padding;
     height: small-input-min-height();
 }
+*/
 
 /*************************************
 #*** Input text, select, textarea
@@ -83,11 +88,6 @@ $border:  1px;
     @extend %box-input-dimensions;
     height: auto;
     min-height: input-min-height();
-}
-
-%button-input-dimensions.small {
-    height: auto;
-    min-height: small-input-min-height();
 }
 
 %button-input-looks {

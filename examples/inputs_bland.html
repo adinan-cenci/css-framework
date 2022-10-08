@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
-        <link rel="stylesheet" href="../dist/everything.css" />
         <link rel="stylesheet" href="_stylesheet.css" />
         <title>Document</title>
     </head>
     <body>
+
         <div class="simple" id="wrapper">
             <header id="header">
                 <nav>
@@ -44,7 +44,7 @@
                     <span style="display: inline-block;">Regular text</span> <input type="text" name="name" value="Something" /> <button>Some button</button>
                 </div>
 
-                <table id="example-inputs" class="table horizontaly-striped">
+                <table id="example-inputs">
                     <tr>
                         <th colspan="2">Text</th>
                     </tr>
@@ -183,19 +183,8 @@
                     </tr>
                     <tr>
                         <td>Input Checkbox</td>
-                        <td><input type="checkbox" id="check" /></td>
+                        <td><input type="checkbox" name="check" /> <input type="checkbox" name="check2" /></td>
                     </tr>
-
-                    <tr>
-                        <td>Labeled</td>
-                        <td>
-                            <label class="checkbox">
-                                <input type="checkbox" name="input" value="1" /><span class="label">I agree to the <a>terms of use</a>.</span>
-                            </label>
-                        </td>
-                    </tr>
-
-
 
                     <tr>
                         <th colspan="2">Buttons</th>
@@ -203,26 +192,38 @@
 
                     <tr>
                         <td>
-                            Normal
+                            Button
                         </td>
                         <td>
                             <button>Regular</button>
                             <button disabled>:disabled</button>
-                            <button class="btn-main">.btn-main</button>
-                            <button class="btn-danger">.btn-danger</button>
-                            <button class="btn-positive">.btn-positive</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Small
+                            Input button
                         </td>
                         <td>
-                            <button class="small">Regular</button>
-                            <button disabled class="small">:disabled</button>
-                            <button class="btn-main small">.btn-main</button>
-                            <button class="btn-danger small">.btn-danger</button>
-                            <button class="btn-positive small">.btn-positive</button>
+                            <input type="button" value="Regular"/>
+                            <input type="button" value=":disabled" disabled/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Input submit
+                        </td>
+                        <td>
+                            <input type="submit" value="Regular"/>
+                            <input type="submit" value=":disabled" disabled/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Input reset
+                        </td>
+                        <td>
+                            <input type="reset" value="Regular"/>
+                            <input type="reset" value=":disabled" disabled/>
                         </td>
                     </tr>
                     <tr>
@@ -262,8 +263,9 @@
                         </td>
                     </tr>
                 </table>
-
+                
             </div>
         </div>
+
     </body>
 </html>

@@ -1,6 +1,7 @@
 
 $base-font-size:    16px;
 $line-height-ratio: 1.5;
+$base-line-height: $base-font-size * $line-height-ratio; // 24px
 
 body {
     margin: 0px;
@@ -38,15 +39,3 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
 }
-
-@import './_blocks.scss';
-@import './_table.scss';
-@import './_inputs.scss';
-@import './_lists.scss';
-@import './_typography.scss';
-@import './_flex.scss';
-@import './_grids.scss';
-@import './_classes.scss';
-@import './_overlay.scss';
-@import './_forms.scss';
-@import './_contents.scss';
