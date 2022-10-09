@@ -1,0 +1,78 @@
+.revealer {
+    display: flex;
+    flex-direction: column;
+
+    .revealer-inner {
+        display: flex;
+        flex-direction: column;
+
+        .revealer-content {
+            width: auto;
+            height: auto;
+        }
+    }    
+}
+
+/*************************************
+#*** REGULAR
+#************************************/
+.revealer:not(.revealer-is-overlay) {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+}
+
+
+/*************************************
+#*** OVERLAY
+#************************************/
+.revealer.revealer-is-overlay {
+    position: relative;
+
+    .revealer-inner {
+        overflow: hidden;
+        transition-duration: 0.5s;
+        transition-property: width, height;
+    }
+}
+
+
+/*************************************
+#*** HORIZONTAL
+#************************************/
+.revealer.revealer-horizontal {
+    height: 100%;
+
+    .revealer-inner {
+        height: 100%;
+
+        .revealer-content {
+            height: 100%;
+        }
+    }
+}
+
+.revealer.revealer-is-overlay.revealer-horizontal {
+    width: 0px;
+}
+
+
+/*************************************
+#*** VERTICAL
+#************************************/
+.revealer.revealer-vertical {
+    display: block;
+    width: 100%;
+
+    .revealer-inner {
+        width: 100%;
+
+        .revealer-content {
+            width: 100%;
+        }
+    }
+}
+
+.revealer.revealer-is-overlay.revealer-vertical {
+    height: 0px;
+}

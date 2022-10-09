@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
-        <link rel="stylesheet" href="../css/everything.css" />
+        <link rel="stylesheet" href="../dist/everything.css" />
+        <script src="../js/revealer.js"></script>
         <link rel="stylesheet" href="_stylesheet.css" />
         <title>Document</title>
     </head>
@@ -39,8 +40,7 @@
             </header>
 
             <div id="middle">
-                <div id="example-content">
-
+                <div id="example-tabs">
                     <ul class="tabs">
                         <li class="tab">
                             <a href="#first-panel">First panel</a>
@@ -78,6 +78,108 @@
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+
+
+                    <br><br><br>
+
+                    <h2>Revealer horizontal</h2>
+                    <a onclick="toggleRevealer(document.querySelector('#example-revealer1 .revealer'))">toggle</a>
+                    <div id="example-revealer1" class="example-revealer">
+                        <div class="revealer revealer-horizontal">
+                            <div class="revealer-inner">
+                                <div class="revealer-content">
+                                    <div class="whatever-i-want-to-reveal">
+                                        line 1 <br>
+                                        line 2 <br>
+                                        line 3 <br>
+                                        line 4 <br>
+                                        line 5 <br>
+                                        line 6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                    </div>
+
+
+                    <h2>Revealer horizontal ( overlay )</h2>
+                    <a onclick="toggleRevealer(document.querySelector('#example-revealer2 .revealer'))">toggle</a>
+                    <div id="example-revealer2" class="example-revealer">
+                        <div class="revealer revealer-horizontal revealer-is-overlay">
+                            <div class="revealer-inner">
+                                <div class="revealer-content">
+                                    <div class="whatever-i-want-to-reveal">
+                                        line 1 <br>
+                                        line 2 <br>
+                                        line 3 <br>
+                                        line 4 <br>
+                                        line 5 <br>
+                                        line 6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                    </div>
+
+
+                    <h2>Revealer vertical</h2>
+                    <a onclick="toggleRevealer(document.querySelector('#example-revealer3 .revealer'))">toggle</a>
+                    <div id="example-revealer3" class="example-revealer">
+                        <div class="revealer revealer-vertical">
+                            <div class="revealer-inner">
+                                <div class="revealer-content">
+                                    <div class="whatever-i-want-to-reveal">
+                                        line 1 <br>
+                                        line 2 <br>
+                                        line 3 <br>
+                                        line 4 <br>
+                                        line 5 <br>
+                                        line 6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                    </div>
+
+
+                    <h2>Revealer vertical ( overlay )</h2>
+                    <a onclick="toggleRevealer(document.querySelector('#example-revealer4 .revealer'))">toggle</a>
+                    <div id="example-revealer4" class="example-revealer">
+                        <div class="revealer revealer-vertical revealer-is-overlay">
+                            <div class="revealer-inner">
+                                <div class="revealer-content">
+                                    <div class="whatever-i-want-to-reveal">
+                                        line 1 <br>
+                                        line 2 <br>
+                                        line 3 <br>
+                                        line 4 <br>
+                                        line 5 <br>
+                                        line 6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
+                        <p>Ea deserunt ipsum nulla quis in Lorem minim ea. Est occaecat reprehenderit aute amet elit eu incididunt ea nisi culpa in laboris velit. Esse magna minim proident ut proident voluptate sint qui aliquip nisi. Adipisicing anim pariatur duis ea nostrud est. Ipsum duis magna ea proident eiusmod do esse.</p>
                     </div>
                     
 

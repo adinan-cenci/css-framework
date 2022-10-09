@@ -99,3 +99,31 @@ body {
 
 /*---------------------------------------*/
 
+.example-revealer {
+    border: solid 1px black;
+    margin-bottom: 60px;
+}
+
+    .whatever-i-want-to-reveal {
+        width: 220px;
+        background-color: #ccc;
+    }
+
+#example-revealer1 .revealer {
+    float: left;
+}
+
+#example-revealer2 .revealer {
+    z-index: 10;
+    float: left;
+}
+
+#example-revealer3 .whatever-i-want-to-reveal {
+    width: 100%;
+}
+
+#example-revealer4 .whatever-i-want-to-reveal {
+    width: 100%;
+}
+
+/*---------------------------------------*/

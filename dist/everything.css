@@ -1258,4 +1258,73 @@ math.div in sass label[for] {
   display: block;
 }
 
+.revealer {
+  display: flex;
+  flex-direction: column;
+}
+.revealer .revealer-inner {
+  display: flex;
+  flex-direction: column;
+}
+.revealer .revealer-inner .revealer-content {
+  width: auto;
+  height: auto;
+}
+
+/*************************************
+#*** REGULAR
+#************************************/
+.revealer:not(.revealer-is-overlay) {
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-property: width, height;
+}
+
+/*************************************
+#*** OVERLAY
+#************************************/
+.revealer.revealer-is-overlay {
+  position: relative;
+}
+.revealer.revealer-is-overlay .revealer-inner {
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-property: width, height;
+}
+
+/*************************************
+#*** HORIZONTAL
+#************************************/
+.revealer.revealer-horizontal {
+  height: 100%;
+}
+.revealer.revealer-horizontal .revealer-inner {
+  height: 100%;
+}
+.revealer.revealer-horizontal .revealer-inner .revealer-content {
+  height: 100%;
+}
+
+.revealer.revealer-is-overlay.revealer-horizontal {
+  width: 0px;
+}
+
+/*************************************
+#*** VERTICAL
+#************************************/
+.revealer.revealer-vertical {
+  display: block;
+  width: 100%;
+}
+.revealer.revealer-vertical .revealer-inner {
+  width: 100%;
+}
+.revealer.revealer-vertical .revealer-inner .revealer-content {
+  width: 100%;
+}
+
+.revealer.revealer-is-overlay.revealer-vertical {
+  height: 0px;
+}
+
 /*# sourceMappingURL=everything.css.map */
