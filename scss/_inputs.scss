@@ -339,6 +339,8 @@ $border:  1px;
         border-radius: 3px;
         background-color: #4a90d9;
         box-shadow: inset 1px 1px #1c5288, inset -1px -1px #1c5288;
+        transition: width 1s;
+        transition-timing-function: linear;
     }
 
     /*************************************
