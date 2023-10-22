@@ -25,19 +25,20 @@
     .input-group.input-group-horizontal {
         @extend .flex;
 
-        .main {
-            flex-grow: 1;
-        }
-
         > input, 
         > textarea, 
         > select, 
         > button,
         > .btn, 
         > .input-group-text {
+            flex-grow: 1;
             height: auto;
             border-radius: 0px;
             margin-left: -1px;
+
+            &.main {
+                flex-grow: 1000;
+            }
         }
 
         > input:first-child, 
@@ -160,6 +161,7 @@
 .simple {
     
     .form-group {
+        display: block;
         
         margin-bottom: 20px;
 
