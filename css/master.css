@@ -1,13 +1,4 @@
 @charset "UTF-8";
-body {
-  margin: 0px;
-  font-family: "Roboto", "Arial";
-  font-size: 16px;
-  line-height: 1.5;
-  color: #212529;
-}
-
-/*------------------------------------------*/
 .simple * {
   pointer-events: inherit;
   vertical-align: top;
@@ -28,6 +19,14 @@ body {
   text-align: inherit;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", "Arial";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
 }
 
 /*************************************
@@ -683,7 +682,7 @@ math.div in sass label[for] {
   #*** flex
   #************************************/
 }
-.simple .flex, .simple .tabs, .simple .button-group, .simple .input-group.input-group-vertical, .simple .input-group.input-group-horizontal, .simple .flexy {
+.simple .flex, .simple .tabs, .simple .input-group.input-group-horizontal, .simple .input-group.input-group-vertical, .simple .button-group, .simple .flexy {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -1074,7 +1073,7 @@ math.div in sass label[for] {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 46px;
+  min-width: input-min-height();
   border: 1px solid #919191;
   text-align: center;
   background-color: #e9ecef;

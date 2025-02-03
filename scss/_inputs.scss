@@ -1,3 +1,4 @@
+@use 'variables';
 @use "sass:math";
 math.div in sass
 
@@ -15,13 +16,13 @@ $border:  1px;
 @function input-min-height($lines: 1)
 {
     // 24px * lines + (10px padding * 2) + (1px border * 2)
-    @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding * 2 ) + ( $border * 2 ) );
+    @return math.ceil( math.round(variables.$base-font-size * variables.$line-height-ratio) * $lines + ( $padding * 2 ) + ( $border * 2 ) );
 }
 
 @function small-input-min-height($lines: 1)
 {
     // 24px * lines + (5px padding * 2) + (1px border * 2)
-    @return ceil( round($base-font-size * $line-height-ratio) * $lines + ( $padding ) + ( $border * 2 ) );
+    @return math.ceil( math.round(variables.$base-font-size * variables.$line-height-ratio) * $lines + ( $padding ) + ( $border * 2 ) );
 }
 
 /*************************************
@@ -35,8 +36,8 @@ $border:  1px;
     padding: $padding;
     border: solid $border transparent;
 
-    font-size: $base-font-size;
-    line-height: $base-font-size * $line-height-ratio;
+    font-size: variables.$base-font-size;
+    line-height: variables.$base-font-size * variables.$line-height-ratio;
 }
 
 %box-input-dimensions.small {

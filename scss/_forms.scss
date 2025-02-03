@@ -3,6 +3,10 @@
 #*** INPUT GROUP
 #************************************/
 
+@use 'inputs';
+@use 'flex';
+@use 'grids';
+
 .simple {
 
     .input-group-text {

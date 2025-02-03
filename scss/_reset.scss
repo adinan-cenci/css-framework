@@ -1,0 +1,26 @@
+.simple * {
+    pointer-events: inherit;
+    vertical-align: top;
+    direction: inherit;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    padding: 0px;
+    border: none;
+    margin: 0px auto 0px auto;
+    outline: none;
+
+    font-size: inherit;
+    line-height: inherit;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    text-align: inherit;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+}

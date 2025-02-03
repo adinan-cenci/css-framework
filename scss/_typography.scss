@@ -1,3 +1,5 @@
+@use 'variables';
+
 .simple {
 /*************************************
 #*** HEADERS
@@ -10,32 +12,32 @@
 
     h1 {
         font-size: 2em;
-        line-height: $line-height-ratio;
+        line-height: variables.$line-height-ratio;
     }
 
     h2 {
         font-size: 1.5em;
-        line-height: $line-height-ratio;
+        line-height: variables.$line-height-ratio;
     }
 
     h3 {
         font-size: 1.25em;
-        line-height: $line-height-ratio;
+        line-height: variables.$line-height-ratio;
     }
 
     h4 {
         font-size: 1em;
-        line-height: $line-height-ratio;
+        line-height: variables.$line-height-ratio;
     }
 
     h5 {
         font-size: 0.875em;
-        line-height: $line-height-ratio;
+        line-height: variables.$line-height-ratio;
     }
 
     h6 {
         font-size: .85em;
-        line-height: $line-height-ratio;
+        line-height: variables.$line-height-ratio;
     }
 
     /*************************************
@@ -51,7 +53,7 @@
             display: block;
             font-style: italic;
             font-size: 0.8em;
-            line-height: $line-height-ratio;
+            line-height: variables.$line-height-ratio;
         }
     }
 

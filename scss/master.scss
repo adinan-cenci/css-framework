@@ -1,52 +1,14 @@
 
-$base-font-size:    16px;
-$line-height-ratio: 1.5;
-
-body {
-    margin: 0px;
-    font-family: 'Roboto', 'Arial';
-    font-size: $base-font-size;
-    line-height: $line-height-ratio;
-    color: #212529;
-}
-
-/*------------------------------------------*/
-
-.simple * {
-    pointer-events: inherit;
-    vertical-align: top;
-    direction: inherit;
-
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
-    padding: 0px;
-    border: none;
-    margin: 0px auto 0px auto;
-    outline: none;
-
-    font-size: inherit;
-    line-height: inherit;
-
-    font-family: inherit;
-    font-weight: inherit;
-    font-style: inherit;
-    color: inherit;
-    text-align: inherit;
-
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-@import './_blocks.scss';
-@import './_table.scss';
-@import './_inputs.scss';
-@import './_lists.scss';
-@import './_typography.scss';
-@import './_flex.scss';
-@import './_grids.scss';
-@import './_classes.scss';
-@import './_overlay.scss';
-@import './_forms.scss';
-@import './_contents.scss';
+@use './_reset.scss';
+@use './_body.scss';
+@use './_blocks.scss';
+@use './_table.scss';
+@use './_inputs.scss';
+@use './_lists.scss';
+@use './_typography.scss';
+@use './_flex.scss';
+@use './_grids.scss';
+@use './_classes.scss';
+@use './_overlay.scss';
+@use './_forms.scss';
+@use './_contents.scss';

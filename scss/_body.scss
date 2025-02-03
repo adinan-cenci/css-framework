@@ -1,0 +1,9 @@
+@use 'variables';
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', 'Arial';
+    font-size: variables.$base-font-size;
+    line-height: variables.$line-height-ratio;
+    color: #212529;
+}
