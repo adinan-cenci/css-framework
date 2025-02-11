@@ -308,6 +308,15 @@ math.div in sass label[for] {
   background-color: #eaeaea;
 }
 
+/*Just to cover anchors using .btn*/
+.simple button:visited,
+.simple input[type=submit]:visited,
+.simple input[type=button]:visited,
+.simple input[type=reset]:visited,
+.simple .btn:visited {
+  color: #2e3436;
+}
+
 .simple button:active,
 .simple input[type=submit]:active,
 .simple input[type=button]:active,
@@ -422,6 +431,7 @@ math.div in sass label[for] {
   background-color: #408102;
 }
 
+/*-----------*/
 .simple {
   /*************************************
   #*** Selectors: Input text

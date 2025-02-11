@@ -47,8 +47,8 @@ body {
 #example-inputs {
     text-align: right;
 }
-    #example-inputs td {
-        width: 50%;
+    #example-inputs td:first-child {
+        width: 20%;
     }
 
     #example-inputs td:last-child {

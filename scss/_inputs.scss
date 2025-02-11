@@ -102,6 +102,11 @@ $border:  1px;
     background-color: #eaeaea;
 }
 
+/*Just to cover anchors using .btn*/
+%button-input-looks:visited {
+    color: #2e3436;
+}
+
 %button-input-looks:active,
 %button-input-looks.active {
     background-color: #dbdbdb;
@@ -166,6 +171,8 @@ $border:  1px;
 %button-input-looks.btn-positive:active {
     background-color: #408102;
 }
+
+/*-----------*/
 
 .simple {
     /*************************************
