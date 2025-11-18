@@ -1,7 +1,10 @@
 {
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.67.0"
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.94.0"
+  },
+  "scripts": {
+    "compile": "./node_modules/gulp-cli/bin/gulp.js"
   }
 }

@@ -42,8 +42,6 @@ body {
   /*************************************
   #*** TABLE
   #************************************/
-  /*------------------------------------------*/
-  /*------------------------------------------*/
 }
 .simple table {
   width: 100%;
@@ -113,11 +111,17 @@ body {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
+.simple {
+  /*------------------------------------------*/
+}
 .simple .horizontaly-striped tr:nth-child(2n+0) td {
   background-color: #F8F7FF;
 }
 .simple .verticaly-striped td:nth-child(2n+0) {
   background-color: #F8F7FF;
+}
+.simple {
+  /*------------------------------------------*/
 }
 .simple .highlights tr:hover td {
   background-color: #EDECFE;
@@ -436,46 +440,23 @@ math.div in sass label[for] {
   /*************************************
   #*** Selectors: Input text
   #************************************/
-  /*************************************
-  #*** Selectors: Input buttons
-  #************************************/
-  /*************************************
-  #*** Selectors: SELECT
-  #************************************/
-  /*************************************
-  #*** COLOR
-  #************************************/
-  /*************************************
-  #*** CHECKS AND RADIOS BUTTONS
-  #************************************/
-  /* radio */
-  /*************************************
-  #*** Selectors: INPUT FILE
-  #************************************/
-  /*input[type=file] {
-      appearance: textfield;
-      -webkit-appearance: textfield;
-      -moz-appearance: textfield;
-      cursor: pointer;
-  }
-
-  input[type=file]::file-selector-button, 
-  input[type=file]::-webkit-file-upload-button {
-
-  }*/
-  /*************************************
-  #*** Selectors: PROGRESS BAR
-  #************************************/
-  /*************************************
-  #*** Selectors: FIELDSET
-  #************************************/
 }
 .simple textarea {
   height: auto;
   min-height: 142px;
 }
+.simple {
+  /*************************************
+  #*** Selectors: Input buttons
+  #************************************/
+}
 .simple .btn {
   text-decoration: none;
+}
+.simple {
+  /*************************************
+  #*** Selectors: SELECT
+  #************************************/
 }
 .simple select[multiple] {
   height: auto;
@@ -483,8 +464,18 @@ math.div in sass label[for] {
 .simple select[multiple] option {
   padding: 5px;
 }
+.simple {
+  /*************************************
+  #*** COLOR
+  #************************************/
+}
 .simple input[type=color] {
   padding: 2px 5px;
+}
+.simple {
+  /*************************************
+  #*** CHECKS AND RADIOS BUTTONS
+  #************************************/
 }
 .simple input[type=radio],
 .simple input[type=checkbox] {
@@ -504,6 +495,9 @@ math.div in sass label[for] {
 }
 .simple input[type=checkbox]:checked:after {
   content: "✔";
+}
+.simple {
+  /* radio */
 }
 .simple input[type=radio] {
   border-radius: 50px;
@@ -535,6 +529,25 @@ math.div in sass label[for] {
   color: #fff;
   background-color: #3465a4;
 }
+.simple {
+  /*************************************
+  #*** Selectors: INPUT FILE
+  #************************************/
+  /*input[type=file] {
+      appearance: textfield;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      cursor: pointer;
+  }
+
+  input[type=file]::file-selector-button, 
+  input[type=file]::-webkit-file-upload-button {
+
+  }*/
+  /*************************************
+  #*** Selectors: PROGRESS BAR
+  #************************************/
+}
 .simple progress::-webkit-progress-bar {
   -webkit-appearance: none;
   border-radius: 3px;
@@ -547,6 +560,11 @@ math.div in sass label[for] {
   box-shadow: inset 1px 1px #1c5288, inset -1px -1px #1c5288;
   transition: width 1s;
   transition-timing-function: linear;
+}
+.simple {
+  /*************************************
+  #*** Selectors: FIELDSET
+  #************************************/
 }
 .simple fieldset {
   padding: 20px;
@@ -578,15 +596,6 @@ math.div in sass label[for] {
   /*************************************
   #*** HEADERS
   #************************************/
-  /*************************************
-  #*** BLOCKS OF TEXT
-  #************************************/
-  /*************************************
-  #*** INLINE TEXT
-  #************************************/
-  /*************************************
-  #*** LINK
-  #************************************/
 }
 .simple h1, .simple h2, .simple h3, .simple h4, .simple h5, .simple h6 {
   margin-bottom: 20px;
@@ -616,6 +625,11 @@ math.div in sass label[for] {
   font-size: 0.85em;
   line-height: 1.5;
 }
+.simple {
+  /*************************************
+  #*** BLOCKS OF TEXT
+  #************************************/
+}
 .simple blockquote {
   padding: 10px 20px;
   border-left: solid 3px grey;
@@ -626,6 +640,11 @@ math.div in sass label[for] {
   font-style: italic;
   font-size: 0.8em;
   line-height: 1.5;
+}
+.simple {
+  /*************************************
+  #*** INLINE TEXT
+  #************************************/
 }
 .simple p {
   margin-bottom: 20px;
@@ -669,6 +688,11 @@ math.div in sass label[for] {
   vertical-align: baseline;
   font-size: 0.75em;
   line-height: 1.5;
+}
+.simple {
+  /*************************************
+  #*** LINK
+  #************************************/
 }
 .simple a {
   cursor: pointer;
