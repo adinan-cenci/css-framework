@@ -1,4 +1,18 @@
-# Simple CSS Framework
+# Overview
+This is my CSS framework.
 
-In order to avoid colliding with other css libraries we avoid global styles, putting them under 
-the `.simple` selector.
+I made it for my personal use in my projects, there is way better things out there, but feel free to check out.
+
+## Compiling
+```
+nvm i;
+nvm use;
+npm i;
+npm run compile;
+```
+
+## Elements
+See the examples directory.
+
+## License
+MIT

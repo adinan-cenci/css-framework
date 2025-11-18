@@ -21,19 +21,3 @@
 .intangible {
     pointer-events: none;
 }
-
-.text-in-columns {
-    column-count: 3;
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-
-    column-gap: 40px;
-    -moz-column-gap: 40px;
-    -webkit-column-gap: 40px;
-
-    column-rule: solid 1px #9a9999;
-    -moz-column-rule: solid 1px #9a9999;
-    -webkit-column-rule: solid 1px #9a9999;
-
-    text-align: justify;
-}

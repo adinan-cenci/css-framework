@@ -1,0 +1,53 @@
+
+@mixin column-count($count) {
+    column-count: $count;
+    -moz-column-count: $count;
+    -webkit-column-count: $count;
+}
+
+.simple {
+    .text-in-columns {
+        column-gap: 40px;
+        -moz-column-gap: 40px;
+        -webkit-column-gap: 40px;
+
+        column-rule: solid 1px #9a9999;
+        -moz-column-rule: solid 1px #9a9999;
+        -webkit-column-rule: solid 1px #9a9999;
+
+        text-align: justify;
+    
+
+        @media screen and (min-width: 769px) {
+            &.text-sm-1-columns { @include column-count(1); }
+            &.text-sm-2-columns { @include column-count(2); }
+            &.text-sm-3-columns { @include column-count(3); }
+            &.text-sm-4-columns { @include column-count(4); }
+            &.text-sm-5-columns { @include column-count(5); }
+        }
+
+        @media screen and (min-width: 1024px) {
+            &.text-md-1-columns { @include column-count(1); }
+            &.text-md-2-columns { @include column-count(2); }
+            &.text-md-3-columns { @include column-count(3); }
+            &.text-md-4-columns { @include column-count(4); }
+            &.text-md-5-columns { @include column-count(5); }
+        }
+
+        @media screen and (min-width: 1216px) {
+            &.text-lg-1-columns { @include column-count(1); }
+            &.text-lg-2-columns { @include column-count(2); }
+            &.text-lg-3-columns { @include column-count(3); }
+            &.text-lg-4-columns { @include column-count(4); }
+            &.text-lg-5-columns { @include column-count(5); }
+        }
+
+        @media screen and (min-width: 1408px) {
+            &.text-xl-1-columns { @include column-count(1); }
+            &.text-xl-2-columns { @include column-count(2); }
+            &.text-xl-3-columns { @include column-count(3); }
+            &.text-xl-4-columns { @include column-count(4); }
+            &.text-xl-5-columns { @include column-count(5); }
+        }
+    }
+}

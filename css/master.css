@@ -711,6 +711,124 @@ math.div in sass label[for] {
   color: red;
 }
 
+.simple .text-in-columns {
+  column-gap: 40px;
+  -moz-column-gap: 40px;
+  -webkit-column-gap: 40px;
+  column-rule: solid 1px #9a9999;
+  -moz-column-rule: solid 1px #9a9999;
+  -webkit-column-rule: solid 1px #9a9999;
+  text-align: justify;
+}
+@media screen and (min-width: 769px) {
+  .simple .text-in-columns.text-sm-1-columns {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+  .simple .text-in-columns.text-sm-2-columns {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  }
+  .simple .text-in-columns.text-sm-3-columns {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+  }
+  .simple .text-in-columns.text-sm-4-columns {
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+  }
+  .simple .text-in-columns.text-sm-5-columns {
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .simple .text-in-columns.text-md-1-columns {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+  .simple .text-in-columns.text-md-2-columns {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  }
+  .simple .text-in-columns.text-md-3-columns {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+  }
+  .simple .text-in-columns.text-md-4-columns {
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+  }
+  .simple .text-in-columns.text-md-5-columns {
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .simple .text-in-columns.text-lg-1-columns {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+  .simple .text-in-columns.text-lg-2-columns {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  }
+  .simple .text-in-columns.text-lg-3-columns {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+  }
+  .simple .text-in-columns.text-lg-4-columns {
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+  }
+  .simple .text-in-columns.text-lg-5-columns {
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .simple .text-in-columns.text-xl-1-columns {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+  .simple .text-in-columns.text-xl-2-columns {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  }
+  .simple .text-in-columns.text-xl-3-columns {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+  }
+  .simple .text-in-columns.text-xl-4-columns {
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+  }
+  .simple .text-in-columns.text-xl-5-columns {
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+  }
+}
+
 .simple {
   /*************************************
   #*** flex
@@ -1019,19 +1137,6 @@ math.div in sass label[for] {
 
 .intangible {
   pointer-events: none;
-}
-
-.text-in-columns {
-  column-count: 3;
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-gap: 40px;
-  -moz-column-gap: 40px;
-  -webkit-column-gap: 40px;
-  column-rule: solid 1px #9a9999;
-  -moz-column-rule: solid 1px #9a9999;
-  -webkit-column-rule: solid 1px #9a9999;
-  text-align: justify;
 }
 
 /*************************************
